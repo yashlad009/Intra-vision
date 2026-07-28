@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AI Interview Coach</string>
+    <string name="sample_question">Tell me about yourself.</string>
+    <string name="default_web_client_id" translatable="false">967323454769-29h0ndogrf1t5pqdl2cogbe77s5r4nfa.apps.googleusercontent.com</string>
+
+    <!-- Bottom Navigation Tabs -->
+    <string name="tab_aptitude">Aptitude</string>
+    <string name="tab_interview">Interview</string>
+    <string name="tab_resume">Resume</string>
+
+    <!-- Aptitude Module -->
+    <string name="aptitude_quantitative">Quantitative Aptitude</string>
+    <string name="aptitude_logical">Logical Reasoning</string>
+    <string name="aptitude_verbal">Verbal Ability</string>
+    <string name="aptitude_data_interpretation">Data Interpretation</string>
+    <string name="prepare">Prepare</string>
+    <string name="practice">Practice</string>
+    <string name="conquer">Conquer</string>
+    <string name="prepare_desc">Study notes &amp; concepts</string>
+    <string name="practice_desc">Q&amp;A with ideal answers</string>
+    <string name="conquer_desc">Timed mock test</string>
+
+    <!-- Interview Module -->
+    <string name="self_prepared">Self-Prepared Practice</string>
+    <string name="faculty_mock">Faculty Coordinator Mock</string>
+    <string name="self_prepared_desc">Practice with category-wise questions</string>
+    <string name="faculty_mock_desc">Enter session code to join mock</string>
+    <string name="enter_session_code">Enter Session Code</string>
+
+    <!-- Resume Module -->
+    <string name="upload_resume">Upload Resume</string>
+    <string name="upload_resume_desc">Upload your resume as PDF for analysis</string>
+    <string name="analysis_history">Analysis History</string>
+    <string name="resume_score">Resume Score</string>
+</resources>

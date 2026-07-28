@@ -1,0 +1,498 @@
+=== PAGE 1 ===
+ Kolhapur Institute of Technology’s 
+ College of Engineering (Autonomous), Kolhapur 
+ “  Smart Campus Canteen Management  & Food Request 
+ Routing System  ” 
+ (Initial-Report) 
+ Mini Project-III (Android) 
+ (UAMIL0571) 
+ By 
+ Sr No.  Name  PRN  Roll No.  Class 
+ 1  Siddharth Chavan  2425001341  25  S.Y - B 
+ 2  Gaurav Kudtarkar  2425000319  31  S.Y - B 
+ 3  Sourabh Phalatane  2425000101  54  S.Y - B 
+ 4  Meeral Pinjani  2425000889  55  S.Y - B 
+ Department of Computer Science Engineering 
+ (Artificial Intelligence and Machine Learning) 
+ KITCOEK, Kolhapur 
+ July, 2026-2027 
+
+
+=== PAGE 2 ===
+ 1. Abstract 
+ The  Smart Campus Canteen Management & Food Request Routing System  is a 
+ centralized web and mobile application developed to streamline food request management 
+ within a college campus. The proposed system addresses the limitations of conventional 
+ manual ordering methods by integrating multiple campus canteens, food courts, and 
+ hostel messes into a single digital platform. Unlike commercial food delivery 
+ applications, the system follows a centralized request-routing model in which food 
+ requests are first transmitted to a central college server. The server authenticates users, 
+ verifies canteen availability, validates hostel delivery eligibility where applicable, and 
+ forwards the request to the selected canteen for processing. Based on current operational 
+ conditions, the canteen may accept or reject the request and communicate the estimated 
+ preparation time, which is then relayed to the user through the central server. Upon 
+ acceptance, the request is fulfilled through either pickup or hostel delivery. 
+ The proposed system is designed to serve students, hostel residents, faculty members, 
+ staff, canteen operators, and college administrators through a unified platform. It 
+ incorporates features such as digital menu management, real-time request tracking, QR 
+ code-based pickup verification, secure online payment integration, order history, feedback 
+ and rating mechanisms, and an administrative dashboard for monitoring operations and 
+ generating analytical reports. By centralizing communication between users and campus 
+ food outlets, the system aims to reduce waiting time, improve operational efficiency, 
+ minimize congestion during peak hours, and enhance the overall food service experience 
+ within the institution. 
+ 2. Introduction 
+ The increasing adoption of digital technologies has transformed service management 
+ across educational institutions, including academic administration, library systems, 
+ attendance management, and fee payment. However, food service operations in many 
+ colleges continue to rely on conventional manual processes, resulting in inefficiencies for 
+ both users and canteen operators. Institutions with multiple food courts, departmental 
+ canteens, and hostel messes often operate these facilities independently, without a 
+ centralized platform for communication, request management, or service monitoring. 
+ In the existing system, students, faculty members, and staff are required to physically visit 
+ individual canteens to check menu availability, place requests, and wait in queues without 
+ any prior information regarding preparation time or crowd levels. Hostel residents face 
+ additional inconvenience due to the absence of a structured mechanism for requesting 
+ food delivery to their hostels. Consequently, users experience unnecessary waiting, 
+ inconsistent service quality, and limited convenience, particularly during peak hours. 
+
+=== PAGE 3 ===
+ Similarly, canteen operators lack a unified digital platform to manage incoming requests, 
+ update menu availability, indicate stock shortages, or regulate request intake during 
+ periods of high demand. From an administrative perspective, the absence of centralized 
+ monitoring makes it difficult to evaluate canteen performance, analyze service trends, 
+ monitor operational efficiency, or generate meaningful reports for decision-making. 
+ To address these challenges, this project proposes the  Smart Campus Canteen 
+ Management and Food Request Routing System  , a centralized web and mobile 
+ application developed exclusively for use within the college campus. Unlike commercial 
+ food delivery platforms that facilitate direct transactions between customers and 
+ restaurants, the proposed system follows a centralized request-routing architecture. Every 
+ food request is first transmitted to a central college server, where it is authenticated, 
+ validated, and forwarded to the selected canteen for processing. The canteen then 
+ responds with the request status and estimated preparation time, after which the request is 
+ fulfilled through either pickup or hostel delivery, depending on the user's preference and 
+ service availability. 
+ By integrating multiple campus food outlets into a single digital platform, the proposed 
+ system aims to improve operational efficiency, reduce waiting time, enhance 
+ communication between users and canteen operators, and provide the college 
+ administration with a comprehensive platform for monitoring, management, and 
+ data-driven decision-making. This report presents the analysis, design, and proposed 
+ implementation of the system, highlighting its objectives, architecture, functional 
+ components, and anticipated benefits to all stakeholders. 
+ 3. Problem Statement 
+ The existing food service system within the college campus operates through multiple 
+ independent canteens, food courts, and hostel messes, each functioning without a 
+ centralized digital platform. As a result, the ordering and service process is largely 
+ manual, leading to operational inefficiencies and inconvenience for both users and service 
+ providers. 
+ Students, faculty members, and staff are required to visit individual canteens to check 
+ menu availability, place food requests, and wait in queues without prior knowledge of 
+ preparation time or service availability. This often results in increased waiting time, 
+ overcrowding during peak hours, and an inconsistent user experience. Hostel residents 
+ face additional challenges due to the absence of a structured mechanism for requesting 
+ food delivery to hostel premises. 
+ From the operational perspective, canteen operators lack an integrated system to manage 
+ incoming requests, update menu availability, indicate stock shortages, regulate request 
+ intake during busy periods, or communicate estimated preparation times effectively. 
+
+=== PAGE 4 ===
+ Furthermore, the college administration does not have a centralized mechanism to 
+ monitor the performance of multiple food outlets, analyze operational data, or make 
+ informed decisions regarding service quality, resource allocation, and overall canteen 
+ management. 
+ Therefore, there is a need for a centralized campus food request management system that 
+ can integrate all campus food outlets, streamline communication between users and 
+ canteen operators, improve operational efficiency, reduce waiting time, and provide 
+ administrators with comprehensive monitoring and analytical capabilities. 
+ 4. Existing System 
+ The existing food service system within the college campus primarily operates through 
+ conventional manual procedures. Each canteen, food court, or hostel mess functions 
+ independently, with users required to visit the respective outlet to view the menu, place 
+ food requests, and collect their orders. During peak hours, some canteens may implement 
+ token-based or queue-based service mechanisms; however, these systems remain isolated 
+ and are not integrated across the campus. 
+ The absence of a centralized digital platform makes it difficult for students, faculty 
+ members, and staff to access information such as menu availability, estimated preparation 
+ time, or operational status before visiting a canteen. Similarly, hostel residents have 
+ limited or no access to a formal food delivery mechanism, resulting in inconvenience 
+ during academic hours or late-night periods. 
+ From the service provider's perspective, canteen operators rely on manual order 
+ management, making it difficult to regulate incoming requests, update menu availability, 
+ communicate preparation delays, or manage customer flow efficiently. Furthermore, the 
+ college administration lacks a centralized system to monitor canteen operations, analyze 
+ service performance, or generate reports for effective decision-making. 
+ Consequently, the existing approach leads to longer waiting times, overcrowding during 
+ peak hours, inefficient communication, and limited operational transparency. 
+ Limitations of the Existing System 
+ 1.  No centralized platform integrating all campus canteens and food courts. 
+ 2.  No real-time information regarding menu availability or preparation time. 
+ 3.  No structured mechanism for hostel food delivery. 
+ 4.  Manual request handling leading to increased waiting time and service delays. 
+ 5.  Lack of authenticated user identification linked to institutional credentials. 
+ 6.  No centralized monitoring or analytical dashboard for college administration. 
+ 7.  Limited or no support for digital payment integration. 
+
+=== PAGE 5 ===
+ 8.  Absence of an organized feedback and grievance management system. 
+ 9.  Inefficient communication between users and canteen operators. 
+ 10.  No historical data for analyzing demand patterns or service performance. 
+ Table 1: Comparison of Systems 
+ Aspect  Existing Manual 
+ System 
+ Generic Food 
+ Delivery Apps 
+ (Swiggy/Zomato) 
+ Proposed System 
+ Authentication  None  Phone/email based  College ID linked 
+ Order Model  Walk-in / informal  Direct instant order  Request → Server → 
+ Canteen approval 
+ Hostel Delivery  Not supported 
+ Not applicable (No 
+ campus service 
+ integration) 
+ Built-in 
+ eligibility-checked 
+ delivery 
+ Admin Monitoring  None  None (No institutional 
+ integration)  Centralized dashboard 
+ Vendor Scope  Campus canteens 
+ (unconnected) 
+ External restaurants 
+ (No campus 
+ canteen/mess 
+ integration) 
+ Internal campus 
+ canteens, food courts, 
+ and messes 
+ Cost to Institution  None, but inefficient  Not applicable 
+ One-time + 
+ maintenance cost, 
+ campus-owned 
+ Service Availability  Limited (Day only)  Limited (upto hostel 
+ policy hours) 
+ 24/7 (Day & Night 
+ Canteens) 
+ 5. Proposed System 
+ The proposed system introduces a centralized request-routing architecture in which 
+ students, hostel residents, faculty, and staff submit food requests through a single 
+ application. Every request passes through a central college server responsible for user 
+ authentication, canteen availability verification, and, where applicable, hostel delivery 
+ eligibility validation, before being forwarded to the selected canteen. The canteen 
+ operator can accept or reject the request, modify the estimated preparation time, mark 
+ specific items as unavailable, or temporarily pause incoming requests. Once accepted, the 
+ system communicates the estimated preparation time to the requester and sends a 
+ notification when the request is ready. The requester can then either collect the food using 
+ QR code-based verification or receive it through hostel delivery, where available. 
+
+=== PAGE 6 ===
+ This  request-approval model  , rather than an  instant-order model  , is the fundamental 
+ architectural distinction between the proposed system and commercial food delivery 
+ platforms. It is specifically designed to reflect the operational requirements of campus 
+ canteens, where food preparation depends on available resources, current workload, and 
+ service capacity rather than guaranteed order fulfillment. 
+ 5.1 Objectives 
+ The primary objectives of the proposed system are: 
+ 1.  To centralize food request management across all campus canteens, food courts, 
+ and hostel messes through a single application. 
+ 2.  To reduce physical queuing time by enabling advance food requests with real-time 
+ status updates. 
+ 3.  To introduce a structured and eligibility-based hostel delivery mechanism. 
+ 4.  To provide canteen operators with digital tools for managing food requests, menu 
+ availability, inventory status, and operational capacity. 
+ 5.  To equip the college administration with centralized monitoring, reporting, and 
+ analytical capabilities across all campus food service outlets. 
+ 6.  To improve transparency, accountability, and user satisfaction through request 
+ history, feedback, and rating mechanisms. 
+ 6. Scope 
+ The scope of the proposed system defines the functionalities that will be implemented in 
+ the current phase of the project, as well as the features that are intentionally excluded. 
+ - In Scope 
+ 1.  Centralized food request routing across multiple campus canteens and food courts. 
+ 2.  Integration of hostel messes with eligibility-based hostel delivery. 
+ 3.  Digital menu management by canteen operators. 
+ 4.  Real-time notifications for request status and estimated preparation time. 
+ 5.  QR code-based verification for food pickup. 
+ 6.  Secure in-app payment processing. 
+ 7.  Feedback, ratings, and request history management. 
+ 8.  Administrative dashboard for monitoring, reporting, and analytics. 
+ - Out of Scope 
+ 1.  Integration with off-campus restaurants or third-party food delivery platforms. 
+ 2.  Food delivery outside the college campus. 
+
+=== PAGE 7 ===
+ 3.  Dynamic or surge pricing mechanisms. 
+ 4.  Multi-campus deployment (limited to a single-campus implementation in the 
+ current phase). 
+ 6.1 Stakeholders 
+ Stakeholder  Role in System 
+ Student  Submits food requests, tracks request status, makes digital 
+ payments, views request history, and provides feedback and 
+ ratings. 
+ Hostel Resident  Performs all student functions, with additional access to hostel 
+ delivery services and hostel address management. 
+ Faculty  Submits food requests, primarily for pickup, and may receive 
+ priority service where applicable. 
+ Staff  Submits food requests and accesses the system similarly to faculty 
+ members. 
+ Canteen Operator  Manages digital menus, accepts or rejects incoming requests, 
+ updates estimated preparation time, manages item availability, and 
+ controls request intake. 
+ Administrator  Monitors all campus canteens, manages users and canteens, views 
+ analytics and reports, and handles administrative oversight and 
+ escalations. 
+ 6.2 Assumptions 
+ The proposed system is developed based on the following assumptions: 
+ 1.  All users possess valid college-issued credentials for authentication and system 
+ access. 
+ 2.  Each canteen has at least one operator-side device (computer, tablet, or 
+ smartphone) to manage incoming food requests. 
+ 3.  The campus has reliable internet connectivity to support real-time request 
+ processing and notifications. 
+ 4.  Canteen operators regularly update menu availability and request status. 
+ 5.  Users have access to smartphones or web-enabled devices to use the application. 
+
+=== PAGE 8 ===
+ 6.3 Constraints 
+ The development and implementation of the proposed system are subject to the following 
+ constraints: 
+ 1.  The initial deployment is limited to a single college campus. 
+ 2.  Successful operation depends on the willingness of canteen operators to adopt the 
+ digital workflow. 
+ 3.  Payment integration is restricted to gateways approved by the institution. 
+ 4.  The system's performance depends on the availability of stable internet 
+ connectivity within the campus. 
+ 5.  Hostel delivery services are subject to institutional policies and operational 
+ feasibility. 
+ This version reads more like a software engineering report while remaining concise 
+ enough for an initial synopsis. 
+ 7. Stages of the Project (Project Methodology) 
+ The project follows a structured lifecycle, aligned with standard software engineering 
+ practices and adapted to an academic final-year project timeline: 
+ 1.  Requirement Gathering & Analysis  – Conducting informal surveys and 
+ interviews with students, canteen staff, and college administration to identify 
+ functional and non-functional requirements while reviewing the limitations of the 
+ existing manual process. 
+ 2.  Feasibility Study  – Assessing the technical, operational, and economic feasibility 
+ of the proposed system before committing to the design phase. 
+ 3.  System Design  – Producing the system architecture, database schema, and UI/UX 
+ wireframes, and developing the system architecture, use case diagrams, and data 
+ flow diagrams presented in this report. 
+ 4.  Technology Selection  – Finalizing the frontend, backend, database, real-time 
+ notification mechanism, and payment gateway to be used. 
+ 5.  Implementation (Development)  – Module-wise development covering the 
+ Student Module, Hostel Module, Canteen Operator Module, and Administrator 
+ Module. 
+ 6.  Testing  – Conducting unit testing of individual modules, integration testing across 
+ the request-routing pipeline, and user acceptance testing with a pilot canteen. 
+ 7.  Deployment  – Rolling out the system to one canteen and one hostel mess as a 
+ pilot before expanding it campus-wide. 
+
+=== PAGE 9 ===
+ 8.  Maintenance & Feedback Iteration  – Ongoing monitoring after deployment, 
+ with refinements driven by real user feedback and analytics. 
+ Fig 1.: Project Stages Timeline 
+ 8. System Architecture 
+ The system follows a layered client-server architecture. At the client layer, three distinct 
+ interfaces exist: the Student/Hostel/Faculty/Staff-facing mobile or web application, the 
+
+
+=== PAGE 10 ===
+ Canteen Operator dashboard, and the Administrator dashboard. All client requests pass 
+ through an API layer into the Central Server, which houses the core business logic: 
+ authentication and role-based access control, request validation, hostel eligibility 
+ verification, and routing logic that directs each request to the appropriate canteen. The 
+ Central Server interacts with a database layer storing user records, canteen and menu 
+ data, request/order records, and feedback data. Two external-facing services support the 
+ core logic: a notification service (for push/SMS/in-app alerts at each stage of the request 
+ lifecycle) and a payment gateway (for processing in-app payments securely). 
+ This layered separation ensures that no client ever communicates directly with a canteen; 
+ every interaction is mediated by the Central Server, which is the defining architectural 
+ principle of this system and the basis for its centralized monitoring and control 
+ capabilities. 
+ Fig 2.: System Architecture 
+ 9. Use Case Diagram 
+ The system supports six actors, each with distinct interactions. Students and hostel 
+ residents can log in, browse digital menus across canteens, submit a food request, track its 
+ status in real time, make in-app payments, and provide feedback after fulfillment; hostel 
+ residents additionally have their delivery eligibility checked as an extension of the request 
+ submission use case. Faculty and staff follow a similar but typically pickup-only flow. 
+ Canteen operators can view incoming requests, accept or reject them, update estimated 
+
+
+=== PAGE 11 ===
+ preparation times, mark specific menu items as unavailable, and temporarily pause new 
+ incoming requests during high-demand periods. Administrators can monitor all canteens 
+ in real time, view cross-canteen analytics and reports, manage user accounts and 
+ permissions, and handle escalated complaints or disputes. 
+ Fig 3.: Use Case Diagram 
+ 10. Data Flow Diagram 
+ 10.1 Level 0 (Context Diagram) 
+ At the highest level of abstraction, the entire system is represented as a single process — 
+ "Smart Campus Canteen Management System" — surrounded by four external entities: 
+ Student/Hostel Resident/Faculty/Staff (submitting requests and receiving responses), 
+ Canteen Operator (receiving requests and sending decisions), Administrator (receiving 
+ reports and sending management commands), and Payment Gateway (processing 
+ transactions). 
+ Fig 4.: Data Flow Level-0 (Context Diagram) 
+
+
+=== PAGE 12 ===
+ 10.2 Level 1 (Decomposed Process View) 
+ At Level 1, the single system process is decomposed into five core sub-processes: 
+ (1) Authentication & Authorization, which validates user credentials against the User data 
+ store; 
+ (2) Request Validation & Routing, which checks canteen availability and hostel eligibility 
+ before forwarding requests to the appropriate canteen; 
+ (3) Canteen Response Handling, which processes accept/reject/modify decisions from 
+ canteen operators and updates the Request data store; 
+ (4) Notification Dispatch, which triggers alerts to users at each stage of the request 
+ lifecycle; and 
+ (5) Payment Processing, which handles transaction initiation and confirmation with the 
+ external Payment Gateway. Three data stores support these processes: the User Database, 
+ the Canteen & Menu Database, and the Request/Order Database. 
+ Fig 5.: Data Flow Level-1 (Decomposed Process View) 
+
+
+=== PAGE 13 ===
+ 11. System Modules 
+ Module  Key Functions 
+ Student/Hostel Module  Login, menu browsing, request submission, status tracking, 
+ payment, feedback. 
+ Faculty/Staff Module  Similar to Student/Hostel Module, primarily 
+ pickup-oriented. 
+ Canteen Operator 
+ Module 
+ Menu management, request acceptance/rejection, 
+ preparation time updates, item availability management. 
+ Admin Module  Cross-canteen monitoring, analytics, user management, 
+ complaint handling. 
+ Notification Engine  Real-time push notifications, SMS notifications, and in-app 
+ alerts throughout the request lifecycle. 
+ Payment Module  In-app payment initiation, payment gateway integration, 
+ transaction logging. 
+ Analytics Module  Request volume analysis, peak-hour analysis, canteen 
+ performance comparison, report generation. 
+ 12. Core Features 
+ 1.  Multi-canteen and food-court request routing through a single application 
+ 2.  Digital, real-time menu browsing per canteen 
+ 3.  Request-based submission with server-mediated approval (accept/reject/modify) 
+ 4.  Real-time estimated preparation time updates 
+ 5.  Pickup or eligibility-verified hostel delivery options 
+ 6.  QR-code based pickup verification 
+ 7.  In-app payment processing 
+ 8.  Request/order history 
+ 9.  Feedback and ratings per completed request 
+ 10.  Inventory/item availability indicators and temporary canteen closure status 
+ 11.  Administrative dashboard with live monitoring and analytics 
+
+=== PAGE 14 ===
+ 13. Feasibility Study 
+ 1.  Technical Feasibility  :  The system relies on well-established, widely supported 
+ technologies, including a standard client-server web/mobile architecture, relational 
+ or document databases, real-time notification services (such as push notification 
+ APIs), and standard payment gateway integrations. No component requires 
+ research-grade or experimental technology, making the system technically feasible 
+ to develop within an academic project timeline using existing frameworks and 
+ libraries. 
+ 2.  Operational Feasibility  :  Successful operation depends primarily on canteen 
+ operator adoption. Each canteen requires at least one operator-facing device and a 
+ willingness to shift from manual to digital request handling. Given the relatively 
+ small and controlled scope of a single campus, operator training and onboarding 
+ are manageable, and a pilot deployment with one canteen can be used to validate 
+ the workflow before wider implementation. 
+ 3.  Economic Feasibility  :  As an internally developed academic and institutional tool, 
+ the primary costs include development effort, hosting or server infrastructure, and 
+ ongoing maintenance. These costs are significantly lower than licensing a 
+ commercial food-delivery platform and eliminate the per-transaction commission 
+ fees typically charged by third-party delivery services. The proposed system is 
+ therefore economically feasible and justified by reduced recurring costs, improved 
+ operational efficiency, and better management of campus food services. 
+ 14. Technology Stack 
+ The  technology  choices  below  reflect  a  standard,  well-supported  web  and  mobile 
+ development  stack  suited  to  a  request-routing  system  with  real-time  notification  and 
+ payment  requirements.  The  selected  technologies  prioritize  reliability,  scalability, 
+ maintainability,  and  ease  of  implementation  within  an  academic  project  timeline  while 
+ avoiding experimental or niche tools. 
+ Layer  Suggested Technology  Reason for Choice 
+ Frontend 
+ (Student/Faculty/Staff 
+ App) 
+ React.js (Web) or Flutter 
+ (Cross-Platform Mobile) 
+ Component-based user interface, strong 
+ community support, and suitable for 
+ real-time request status updates. 
+
+=== PAGE 15 ===
+ Layer  Suggested Technology  Reason for Choice 
+ Frontend (Canteen 
+ Operator Dashboard)  React.js 
+ Provides a fast, form-based interface for 
+ request acceptance, rejection, menu 
+ management, and preparation time updates. 
+ Suitable for desktop or tablet usage. 
+ Frontend (Admin 
+ Dashboard) 
+ React.js with Chart.js or 
+ Recharts 
+ Supports data-intensive dashboards and 
+ analytical visualizations through a mature 
+ charting ecosystem. 
+ Backend / API Layer  Node.js with Express.js or 
+ Django (Python) 
+ Handles authentication, business logic, 
+ request routing, and REST API development 
+ with strong library and real-time support. 
+ Database  PostgreSQL or MongoDB 
+ PostgreSQL is suitable for structured 
+ relational data, while MongoDB is 
+ appropriate for document-oriented data 
+ models. 
+ Real-Time Notifications  Firebase Cloud Messaging 
+ (FCM) or Socket.IO 
+ Enables instant notifications for request 
+ acceptance, rejection, preparation status, and 
+ pickup without continuous polling. 
+ Authentication 
+ JWT Authentication with 
+ optional College SSO 
+ Integration 
+ Ensures secure login, verified institutional 
+ identity, and role-based access control. 
+ Payment Gateway  Razorpay (or equivalent 
+ UPI-supported gateway) 
+ Widely adopted in India, simple integration, 
+ and supports secure digital payments. 
+ Hosting / Cloud  Institution Server, AWS, 
+ Render, or Railway 
+ Suitable for pilot deployment with low 
+ infrastructure cost and future scalability. 
+ Version Control  Git and GitHub 
+ Industry-standard version control system 
+ supporting collaborative software 
+ development and project management. 
+ Fig 6.: Proposed Technology Stack 
+
+
+=== PAGE 16 ===
+ 15. Future Scope 
+ 1.  AI-based demand prediction to help canteens anticipate peak-hour rushes and 
+ reduce food wastage 
+ 2.  Dynamic staffing recommendations for canteen operators based on predicted 
+ demand 
+ 3.  Integration with a campus ID-linked digital wallet or canteen credit system 
+ 4.  Extension to multi-campus deployment for institutions with more than one campus 
+ 5.  Voice-based or chatbot-assisted request submission for accessibility 
+ 6.  Sustainability tracking, including food waste analytics per canteen 
+ 16. Conclusion 
+ The Smart Campus Canteen Management & Food Request Routing System addresses a 
+ clear and specific gap in campus food service delivery — one that generic commercial 
+ food-delivery platforms are not designed to solve, given their direct-order, open-market 
+ model. By introducing a centralized, request-routing architecture mediated by a college 
+ server, the system enables structured, transparent, and efficient food service across 
+ canteens, food courts, and hostel messes, while giving canteen operators practical tools 
+ for demand management and college administration comprehensive oversight through a 
+ unified monitoring dashboard. The system architecture, use case, and data flow diagrams 
+ presented in this report establish the technical foundation for the subsequent design and 
+ implementation phases of the project. 
+

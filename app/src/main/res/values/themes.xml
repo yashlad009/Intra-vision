@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.AIInterviewCoach" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/surface</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/surface</item>
+
+        <!-- Background & Surface colors -->
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Error / Danger colors -->
+        <item name="colorError">@color/danger</item>
+        <item name="colorOnError">@color/surface</item>
+
+        <!-- Status bar styling -->
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

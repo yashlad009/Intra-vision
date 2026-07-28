@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:id="@+id/nav_recording"
+    app:startDestination="@id/landingFragment">
+
+    <!-- Landing Page / Dashboard -->
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.aiinterviewcoach.ui.recording.LandingFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_landing">
+
+        <action
+            android:id="@+id/action_landingFragment_to_questionSelectFragment"
+            app:destination="@id/questionSelectFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_landingFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_landingFragment_to_recordingFragment"
+            app:destination="@id/recordingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_landingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/landingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Authentication: Login Screen -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.aiinterviewcoach.ui.auth.LoginFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_landingFragment"
+            app:destination="@id/landingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Authentication: Registration Screen -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.aiinterviewcoach.ui.auth.RegisterFragment"
+        android:label="Create Account"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_registerFragment_to_landingFragment"
+            app:destination="@id/landingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Question Selection List -->
+    <fragment
+        android:id="@+id/questionSelectFragment"
+        android:name="com.example.aiinterviewcoach.ui.recording.QuestionSelectFragment"
+        android:label="Select Question"
+        tools:layout="@layout/fragment_question_select">
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_questionSelectFragment_to_recordingFragment"
+            app:destination="@id/recordingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/landingFragment" />
+    </fragment>
+
+    <!-- Camera Recording Screen -->
+    <fragment
+        android:id="@+id/recordingFragment"
+        android:name="com.example.aiinterviewcoach.ui.recording.RecordingFragment"
+        android:label="Record Answer"
+        tools:layout="@layout/fragment_recording">
+
+        <argument
+            android:name="questionText"
+            app:argType="string"
+            android:defaultValue="Tell me about yourself." />
+
+        <action
+            android:id="@+id/action_recordingFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/landingFragment" />
+
+        <action
+            android:id="@+id/action_recordingFragment_to_reportFragment"
+            app:destination="@id/reportFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/landingFragment" />
+    </fragment>
+
+    <!-- Practice History List -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.aiinterviewcoach.ui.recording.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history">
+
+        <action
+            android:id="@+id/action_historyFragment_to_playbackFragment"
+            app:destination="@id/playbackFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Video Playback -->
+    <fragment
+        android:id="@+id/playbackFragment"
+        android:name="com.example.aiinterviewcoach.ui.recording.PlaybackFragment"
+        android:label="Playback"
+        tools:layout="@layout/fragment_playback">
+
+        <argument
+            android:name="filename"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Feedback Report -->
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.aiinterviewcoach.ui.recording.ReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_report">
+
+        <argument
+            android:name="filename"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_reportFragment_to_playbackFragment"
+            app:destination="@id/playbackFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+</navigation>

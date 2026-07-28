@@ -1,0 +1,134 @@
+[versions]
+# Android Gradle Plugin & Kotlin
+agp                       = "8.4.2"
+kotlin                    = "1.9.24"
+
+# KSP (must match Kotlin version)
+ksp                       = "1.9.24-1.0.20"
+
+# AndroidX Core
+core-ktx                  = "1.13.1"
+appcompat                 = "1.7.0"
+material                  = "1.12.0"
+constraintlayout          = "2.1.4"
+activity-ktx              = "1.9.0"
+fragment-ktx              = "1.8.1"
+
+# Lifecycle
+lifecycle                 = "2.8.3"
+
+# Navigation
+navigation                = "2.7.7"
+
+# Room
+room                      = "2.6.1"
+
+# CameraX
+camerax                   = "1.3.4"
+
+# ML Kit
+mlkit-face-detection      = "16.1.7"
+mlkit-pose-detection      = "18.0.0-beta3"
+
+# Hilt
+hilt                      = "2.51.1"
+
+# Kotlin Coroutines
+coroutines                = "1.8.1"
+
+# Testing — unit
+junit                     = "4.13.2"
+junit5                    = "5.10.3"
+kotest                    = "5.9.1"
+mockk                     = "1.13.12"
+coroutines-test           = "1.8.1"
+
+# Testing — instrumented
+espresso                  = "3.6.1"
+androidx-test-ext         = "1.2.1"
+hilt-testing              = "2.51.1"
+fragment-testing          = "1.8.1"
+
+# Firebase & Google Services
+firebase-bom              = "33.1.2"
+google-services           = "4.4.2"
+play-services-auth        = "21.2.0"
+
+[libraries]
+# ── Core AndroidX ──────────────────────────────────────────────────────────────
+core-ktx                  = { group = "androidx.core",            name = "core-ktx",               version.ref = "core-ktx" }
+appcompat                 = { group = "androidx.appcompat",       name = "appcompat",              version.ref = "appcompat" }
+material                  = { group = "com.google.android.material", name = "material",             version.ref = "material" }
+constraintlayout          = { group = "androidx.constraintlayout", name = "constraintlayout",      version.ref = "constraintlayout" }
+activity-ktx              = { group = "androidx.activity",        name = "activity-ktx",           version.ref = "activity-ktx" }
+fragment-ktx              = { group = "androidx.fragment",        name = "fragment-ktx",           version.ref = "fragment-ktx" }
+
+# ── Lifecycle ──────────────────────────────────────────────────────────────────
+lifecycle-viewmodel-ktx   = { group = "androidx.lifecycle",       name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-ktx     = { group = "androidx.lifecycle",       name = "lifecycle-runtime-ktx",   version.ref = "lifecycle" }
+
+# ── Navigation ─────────────────────────────────────────────────────────────────
+navigation-fragment-ktx   = { group = "androidx.navigation",      name = "navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui-ktx         = { group = "androidx.navigation",      name = "navigation-ui-ktx",       version.ref = "navigation" }
+
+# ── Room ───────────────────────────────────────────────────────────────────────
+room-runtime              = { group = "androidx.room",            name = "room-runtime",           version.ref = "room" }
+room-ktx                  = { group = "androidx.room",            name = "room-ktx",               version.ref = "room" }
+room-compiler             = { group = "androidx.room",            name = "room-compiler",          version.ref = "room" }
+
+# ── CameraX ────────────────────────────────────────────────────────────────────
+camera-camera2            = { group = "androidx.camera",          name = "camera-camera2",         version.ref = "camerax" }
+camera-lifecycle          = { group = "androidx.camera",          name = "camera-lifecycle",       version.ref = "camerax" }
+camera-video              = { group = "androidx.camera",          name = "camera-video",           version.ref = "camerax" }
+camera-view               = { group = "androidx.camera",          name = "camera-view",            version.ref = "camerax" }
+
+# ── Hilt ───────────────────────────────────────────────────────────────────────
+hilt-android              = { group = "com.google.dagger",        name = "hilt-android",           version.ref = "hilt" }
+hilt-android-compiler     = { group = "com.google.dagger",        name = "hilt-android-compiler",  version.ref = "hilt" }
+
+# ── Kotlin Coroutines ──────────────────────────────────────────────────────────
+coroutines-android        = { group = "org.jetbrains.kotlinx",   name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-core           = { group = "org.jetbrains.kotlinx",   name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+
+# ── ML Kit ─────────────────────────────────────────────────────────────────────
+mlkit-face-detection      = { group = "com.google.mlkit",        name = "face-detection",          version.ref = "mlkit-face-detection" }
+mlkit-pose-detection      = { group = "com.google.mlkit",        name = "pose-detection",          version.ref = "mlkit-pose-detection" }
+
+# ── Charts ─────────────────────────────────────────────────────────────────────
+mpandroidchart            = { group = "com.github.PhilJay",      name = "MPAndroidChart",          version = "v3.1.0" }
+
+# ── Firebase & Authentication ──────────────────────────────────────────────────
+firebase-bom              = { group = "com.google.firebase",     name = "firebase-bom",            version.ref = "firebase-bom" }
+firebase-auth             = { group = "com.google.firebase",     name = "firebase-auth-ktx" }
+play-services-auth        = { group = "com.google.android.gms",  name = "play-services-auth",       version.ref = "play-services-auth" }
+
+# ── Unit Test ──────────────────────────────────────────────────────────────────
+junit                     = { group = "junit",                    name = "junit",                  version.ref = "junit" }
+kotest-runner-junit5      = { group = "io.kotest",                name = "kotest-runner-junit5",   version.ref = "kotest" }
+kotest-property           = { group = "io.kotest",                name = "kotest-property",        version.ref = "kotest" }
+mockk                     = { group = "io.mockk",                 name = "mockk",                  version.ref = "mockk" }
+coroutines-test           = { group = "org.jetbrains.kotlinx",   name = "kotlinx-coroutines-test", version.ref = "coroutines-test" }
+room-testing              = { group = "androidx.room",            name = "room-testing",           version.ref = "room" }
+
+# ── Instrumented Test ──────────────────────────────────────────────────────────
+espresso-core             = { group = "androidx.test.espresso",   name = "espresso-core",          version.ref = "espresso" }
+androidx-test-ext-junit   = { group = "androidx.test.ext",        name = "junit",                  version.ref = "androidx-test-ext" }
+hilt-android-testing      = { group = "com.google.dagger",        name = "hilt-android-testing",   version.ref = "hilt-testing" }
+hilt-android-compiler-test= { group = "com.google.dagger",        name = "hilt-android-compiler",  version.ref = "hilt-testing" }
+fragment-testing          = { group = "androidx.fragment",        name = "fragment-testing",       version.ref = "fragment-testing" }
+
+[plugins]
+android-application       = { id = "com.android.application",    version.ref = "agp" }
+kotlin-android            = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp                       = { id = "com.google.devtools.ksp",     version.ref = "ksp" }
+hilt                      = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+navigation-safeargs       = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+google-services           = { id = "com.google.gms.google-services", version.ref = "google-services" }
+
+[bundles]
+camerax                   = ["camera-camera2", "camera-lifecycle", "camera-video", "camera-view"]
+lifecycle                 = ["lifecycle-viewmodel-ktx", "lifecycle-runtime-ktx"]
+navigation                = ["navigation-fragment-ktx", "navigation-ui-ktx"]
+room                      = ["room-runtime", "room-ktx"]
+coroutines                = ["coroutines-android", "coroutines-core"]
+kotest                    = ["kotest-runner-junit5", "kotest-property"]

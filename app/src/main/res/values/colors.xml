@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg">#F8FAFC</color> <!-- Light clean background -->
+    <color name="surface">#FFFFFF</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="surface_secondary">#F0FDF4</color> <!-- Soft teal/mint tint -->
+    <color name="teal_accent_bg">#E6F4F1</color>
+
+    <!-- Borders -->
+    <color name="border">#E2E8F0</color> <!-- Slate border -->
+    <color name="border_hover">#CBD5E1</color>
+    <color name="border_teal">#99F6E4</color>
+
+    <!-- Text -->
+    <color name="text_primary">#0F172A</color> <!-- Slate-900 -->
+    <color name="text_secondary">#475569</color> <!-- Slate-600 -->
+    <color name="text_muted">#64748B</color> <!-- Slate-500 -->
+
+    <!-- Brand / Primary (Teal Green) -->
+    <color name="primary">#0D9488</color> <!-- Teal-600 -->
+    <color name="primary_dark">#0F766E</color> <!-- Teal-700 -->
+    <color name="primary_light">#14B8A6</color> <!-- Teal-500 -->
+    <color name="teal_50">#F0FDF4</color>
+    <color name="teal_100">#CCFBF1</color>
+    <color name="teal_200">#99F6E4</color>
+    <color name="teal_700">#0F766E</color>
+    <color name="teal_800">#115E59</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#0284C7</color> <!-- Sky-600 -->
+
+    <!-- Accent -->
+    <color name="accent">#0D9488</color> <!-- Teal Accent -->
+
+    <!-- Success -->
+    <color name="success">#10B981</color> <!-- Emerald-500 -->
+
+    <!-- Danger -->
+    <color name="danger">#EF4444</color> <!-- Red-500 -->
+</resources>

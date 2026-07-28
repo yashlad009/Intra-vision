@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_aptitude"
+        android:icon="@drawable/ic_aptitude"
+        android:title="@string/tab_aptitude" />
+
+    <item
+        android:id="@+id/nav_interview"
+        android:icon="@drawable/ic_interview"
+        android:title="@string/tab_interview" />
+
+    <item
+        android:id="@+id/nav_resume"
+        android:icon="@drawable/ic_resume"
+        android:title="@string/tab_resume" />
+
+</menu>
