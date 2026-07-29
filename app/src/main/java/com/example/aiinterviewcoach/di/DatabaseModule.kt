@@ -4,6 +4,7 @@ import android.content.Context
 import com.example.aiinterviewcoach.data.local.AppDatabase
 import com.example.aiinterviewcoach.data.local.RecordingDao
 import com.example.aiinterviewcoach.data.local.AptitudeDao
+import com.example.aiinterviewcoach.data.local.ResumeDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,4 +28,9 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideAptitudeDao(db: AppDatabase): AptitudeDao = db.aptitudeDao()
+
+    @Provides
+    @Singleton
+    fun provideResumeDao(db: AppDatabase): ResumeDao = db.resumeDao()
 }
+

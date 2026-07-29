@@ -100,6 +100,9 @@ mpandroidchart            = { group = "com.github.PhilJay",      name = "MPAndro
 # Markwon Markdown renderer
 markwon-core              = { group = "io.noties.markwon",       name = "core",                    version = "4.6.2" }
 
+# PdfBox Android
+pdfbox-android            = { group = "com.tom-roush",           name = "pdfbox-android",          version = "2.0.27.0" }
+
 # ── Firebase & Authentication ──────────────────────────────────────────────────
 firebase-bom              = { group = "com.google.firebase",     name = "firebase-bom",            version.ref = "firebase-bom" }
 firebase-auth             = { group = "com.google.firebase",     name = "firebase-auth-ktx" }

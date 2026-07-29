@@ -4,11 +4,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.aiinterviewcoach.data.local.AptitudeRepository
 import com.example.aiinterviewcoach.data.local.RecordingRepository
+import com.example.aiinterviewcoach.data.local.ResumeRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.map
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -21,19 +23,22 @@ data class HomeProgressState(
     val totalXp: Int = 0,
     val streakDays: Int = 0,
     val totalSessions: Int = 0,
-    val lastSessionTimeFormatted: String = "Never"
+    val lastSessionTimeFormatted: String = "Never",
+    val isResumeUploaded: Boolean = false
 )
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val aptitudeRepository: AptitudeRepository,
-    private val recordingRepository: RecordingRepository
+    private val recordingRepository: RecordingRepository,
+    private val resumeRepository: ResumeRepository
 ) : ViewModel() {
 
     val uiState: StateFlow<HomeProgressState> = combine(
         aptitudeRepository.getAllProgress(),
-        recordingRepository.getAllEntries()
-    ) { progressList, recordingEntries ->
+        recordingRepository.getAllEntries(),
+        resumeRepository.latestResume
+    ) { progressList, recordingEntries, latestResume ->
         val quantCompleted = progressList.filter { it.category == "quantitative" && it.isCompleted }.size
         val logicalCompleted = progressList.filter { it.category == "logical" && it.isCompleted }.size
         val verbalCompleted = progressList.filter { it.category == "verbal" && it.isCompleted }.size
@@ -60,7 +65,8 @@ class HomeViewModel @Inject constructor(
             totalXp = totalXP,
             streakDays = aptitudeStreak,
             totalSessions = totalSessions,
-            lastSessionTimeFormatted = lastTimeFormatted
+            lastSessionTimeFormatted = lastTimeFormatted,
+            isResumeUploaded = latestResume != null
         )
     }.stateIn(
         scope = viewModelScope,

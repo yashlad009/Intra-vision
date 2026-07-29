@@ -134,4 +134,7 @@ dependencies {
 
     // Markwon Markdown Rendering
     implementation(libs.markwon.core)
+
+    // PdfBox Android for PDF text extraction
+    implementation(libs.pdfbox.android)
 }
