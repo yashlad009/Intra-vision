@@ -1,0 +1,32 @@
+[
+  {
+    "question": "A simple average treats all values equally, while a weighted average accounts for the relative size or importance (weight) of each group before combining them.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Because speed is a rate (distance/time), and averaging rates directly is only valid when time is constant, not distance. For equal distances, the harmonic mean must be used instead.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "The average remains unchanged, since the added value does not shift the balance of the group.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "No, the average of a data set always lies between its minimum and maximum values.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Average is the arithmetic mean, one of the central measures of tendency in statistics, alongside median and mode.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

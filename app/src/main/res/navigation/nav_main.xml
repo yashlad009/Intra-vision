@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/nav_interview">
+
+    <include app:graph="@navigation/nav_recording" />
+    <include app:graph="@navigation/nav_aptitude" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.aiinterviewcoach.ui.home.HomeFragment"
+        android:label="Home" />
+
+    <!-- Resume Destination (Out of Scope / Stubbed) -->
+    <fragment
+        android:id="@+id/nav_resume"
+        android:name="com.example.aiinterviewcoach.ui.resume.ResumeFragment"
+        android:label="Resume" />
+
+</navigation>

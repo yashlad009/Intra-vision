@@ -1,0 +1,242 @@
+[
+  {
+    "question": "\u274c Every student have completed the assignment.\n\nCorrect\n\n\u2705 Every student has completed the assignment.\n\nRule\n\nEvery \u2192 Singular",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c One of the engineers are absent today.\n\nCorrect\n\n\u2705 One of the engineers is absent today.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c Neither the manager nor the employees was ready.\n\nCorrect\n\n\u2705 Neither the manager nor the employees were ready.\n\nRule\n\nVerb agrees with the nearest subject.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c The committee have submitted its report.\n\nCorrect\n\n\u2705 The committee has submitted its report.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c Mathematics are an interesting subject.\n\nCorrect\n\n\u2705 Mathematics is an interesting subject.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c Hardly had I reached than it started raining.\n\nCorrect\n\n\u2705 Hardly had I reached when it started raining.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c No sooner had he arrived when the meeting started.\n\nCorrect\n\n\u2705 No sooner had he arrived than the meeting started.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c He is good in Mathematics.\n\nCorrect\n\n\u2705 He is good at Mathematics.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c She insisted to attend the meeting.\n\nCorrect\n\n\u2705 She insisted on attending the meeting.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c The news are encouraging.\n\nCorrect\n\n\u2705 The news is encouraging.",
+    "options": [],
+    "answer": "\u2705 C",
+    "explanation": ""
+  },
+  {
+    "question": "Identify the error.\n\nEach of the students have submitted the report.",
+    "options": [],
+    "answer": "Error have Correction has",
+    "explanation": ""
+  },
+  {
+    "question": "Neither Rahul nor his friends was present.",
+    "options": [],
+    "answer": "Error was Correction were",
+    "explanation": ""
+  },
+  {
+    "question": "He prefers coffee than tea.",
+    "options": [],
+    "answer": "Error than Correction to",
+    "explanation": ""
+  },
+  {
+    "question": "I have been living here since five years.",
+    "options": [],
+    "answer": "Error since Correction for",
+    "explanation": ""
+  },
+  {
+    "question": "The teacher as well as the students are happy.",
+    "options": [],
+    "answer": "Error are Correction is",
+    "explanation": ""
+  },
+  {
+    "question": "She is one of the best players who plays consistently.",
+    "options": [],
+    "answer": "Error plays Correction play",
+    "explanation": ""
+  },
+  {
+    "question": "Everyone have completed the coding challenge.",
+    "options": [],
+    "answer": "Error have Correction has",
+    "explanation": ""
+  },
+  {
+    "question": "The furniture are expensive.",
+    "options": [],
+    "answer": "Error are Correction is",
+    "explanation": ""
+  },
+  {
+    "question": "Scarcely had I entered than the bell rang.",
+    "options": [],
+    "answer": "Error than Correction when",
+    "explanation": ""
+  },
+  {
+    "question": "The project was completed successful.",
+    "options": [],
+    "answer": "Error successful Correction successfully",
+    "explanation": ""
+  },
+  {
+    "question": "Each employee have completed the training.",
+    "options": [],
+    "answer": "\u274c have \u2705 has Rule Each \u2192 Singular",
+    "explanation": ""
+  },
+  {
+    "question": "Neither the teacher nor the students was present.",
+    "options": [],
+    "answer": "\u274c was \u2705 were Rule Nearest Subject Rule",
+    "explanation": ""
+  },
+  {
+    "question": "The manager along with his assistants are attending the meeting.",
+    "options": [],
+    "answer": "\u274c are \u2705 is Rule \"Along with\" does not change the subject.",
+    "explanation": ""
+  },
+  {
+    "question": "She has been working here since three years.",
+    "options": [],
+    "answer": "\u274c since \u2705 for Rule For \u2192 Duration Since \u2192 Starting Point",
+    "explanation": ""
+  },
+  {
+    "question": "No sooner had I entered when everyone stood up.",
+    "options": [],
+    "answer": "\u274c when \u2705 than Rule No Sooner \u2192 Than",
+    "explanation": ""
+  },
+  {
+    "question": "Hardly had we reached than the train departed.",
+    "options": [],
+    "answer": "\u274c than \u2705 when Rule Hardly \u2192 When",
+    "explanation": ""
+  },
+  {
+    "question": "Everyone have submitted their assignments.",
+    "options": [],
+    "answer": "\u274c have \u2705 has Rule Everyone \u2192 Singular",
+    "explanation": ""
+  },
+  {
+    "question": "The committee have announced its decision.",
+    "options": [],
+    "answer": "\u274c have \u2705 has Rule Committee acting as one unit.",
+    "explanation": ""
+  },
+  {
+    "question": "She is married with an engineer.",
+    "options": [],
+    "answer": "\u274c with \u2705 to Rule Married to",
+    "explanation": ""
+  },
+  {
+    "question": "He is capable to solve difficult problems.",
+    "options": [],
+    "answer": "\u274c to \u2705 of Rule Capable of",
+    "explanation": ""
+  },
+  {
+    "question": "The information are useful.",
+    "options": [],
+    "answer": "\u274c are \u2705 is Rule Information \u2192 Uncountable",
+    "explanation": ""
+  },
+  {
+    "question": "He explained me the solution.",
+    "options": [],
+    "answer": "\u274c explained me \u2705 explained the solution to me Rule Explain \u2192 Explain to someone",
+    "explanation": ""
+  },
+  {
+    "question": "One of the players have scored a century.",
+    "options": [],
+    "answer": "\u274c have \u2705 has Rule One of \u2192 Singular",
+    "explanation": ""
+  },
+  {
+    "question": "The scenery are beautiful.",
+    "options": [],
+    "answer": "\u274c are \u2705 is Rule Scenery \u2192 Singular",
+    "explanation": ""
+  },
+  {
+    "question": "She insisted to attend the interview.",
+    "options": [],
+    "answer": "\u274c to attend \u2705 on attending Rule Insist on",
+    "explanation": ""
+  },
+  {
+    "question": "What is Error Detection?",
+    "options": [],
+    "answer": "Error Detection is the process of identifying grammatical, vocabulary, punctuation, or logical mistakes in a sentence.",
+    "explanation": ""
+  },
+  {
+    "question": "Which grammar topic is asked most frequently?",
+    "options": [],
+    "answer": "Subject-Verb Agreement is one of the most frequently tested grammar concepts.",
+    "explanation": ""
+  },
+  {
+    "question": "How do you solve Error Detection questions quickly?",
+    "options": [],
+    "answer": "Identify the subject, verify the verb, check tense consistency, examine pronouns, articles, prepositions, and finally verify the sentence meaning.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is logical meaning important?",
+    "options": [],
+    "answer": "A sentence can be grammatically correct but still be logically incorrect. Both grammar and meaning must be checked.",
+    "explanation": ""
+  },
+  {
+    "question": "How can grammar be improved?",
+    "options": [],
+    "answer": "Practice daily, revise grammar rules regularly, solve placement questions, and read English newspapers and books.",
+    "explanation": ""
+  }
+]

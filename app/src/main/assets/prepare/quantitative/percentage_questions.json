@@ -1,0 +1,62 @@
+[
+  {
+    "question": "A shopkeeper purchased a laptop for \u20b940,000 and sold it for \u20b946,000.\n\nFind the profit percentage.",
+    "options": [],
+    "answer": "15%",
+    "explanation": "Profit\n\n= Selling Price \u2212 Cost Price\n\n= 46,000 \u2212 40,000\n\n= \u20b96,000\n\nProfit %\n\n= (6000 / 40000) \u00d7100\n\n=15%"
+  },
+  {
+    "question": "The population of a town increases by 15% every year.\n\nIf the current population is 40,000,\n\nfind the population after one year.",
+    "options": [],
+    "answer": "46,000",
+    "explanation": "Increase\n\n=(15\u00d740000)/100\n\n=6000\n\nNew Population\n\n=40000+6000\n\n=46,000"
+  },
+  {
+    "question": "An examination has 800 students.\n\n75% passed.\n\nHow many students failed?",
+    "options": [],
+    "answer": "200",
+    "explanation": "Passed\n\n=(75\u00d7800)/100\n\n=600\n\nFailed\n\n=800\u2212600\n\n=200"
+  },
+  {
+    "question": "The price of a television increased from \u20b924,000 to \u20b927,600.\n\nFind the percentage increase.",
+    "options": [],
+    "answer": "15%",
+    "explanation": "Increase\n\n=3600\n\nPercentage Increase\n\n=(3600/24000)\u00d7100\n\n=15%"
+  },
+  {
+    "question": "A salary decreased from \u20b950,000 to \u20b945,000.\n\nFind the percentage decrease.",
+    "options": [],
+    "answer": "10% 20% 100",
+    "explanation": "Decrease\n\n=5000\n\nPercentage\n\n=(5000/50000)\u00d7100\n\n=10%\n\n\nSelling Price\n\n=120%\n\nCost Price\n\n=100%\n\nProfit\n\n=20%"
+  },
+  {
+    "question": "What is Percentage?\n\nPercentage represents a value out of every hundred.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the difference between Ratio and Percentage?\n\nRatio compares two quantities.\n\nPercentage compares a quantity with the total value out of 100.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Can percentage be greater than 100?\n\nYes.\n\nExample\n\nA company's profit increased by 150%.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Can percentage be negative?\n\nYes.\n\nNegative percentage represents a decrease or loss.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Percentage important?\n\nBecause many business, financial and statistical calculations use percentages.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

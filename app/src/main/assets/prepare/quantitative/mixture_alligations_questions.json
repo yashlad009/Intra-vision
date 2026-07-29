@@ -1,0 +1,68 @@
+[
+  {
+    "question": "Tea costing\n\n\u20b9450/kg\n\nis mixed with Tea costing\n\n\u20b9600/kg.\n\nThe mixture costs\n\n\u20b9540/kg.\n\nFind the mixing ratio.",
+    "options": [],
+    "answer": "2:3",
+    "explanation": "600\u2212540\n\n=\n\n60\n\n540\u2212450\n\n=\n\n90\n\nRatio\n\n60:90\n\n=\n\n2:3"
+  },
+  {
+    "question": "Rice costing\n\n\u20b930/kg\n\nand\n\n\u20b945/kg\n\nare mixed in the ratio\n\n2:3.\n\nFind the average price.",
+    "options": [],
+    "answer": "\u20b939/kg",
+    "explanation": "Total Cost\n\n=\n\n2\u00d730\n\n+\n\n3\u00d745\n\n=\n\n\u20b9195\n\nAverage\n\n=\n\n195\u00f75\n\n=\n\n\u20b939/kg"
+  },
+  {
+    "question": "A milkman mixes\n\n20 litres\n\nof Water\n\nwith\n\n80 litres\n\nof Milk.\n\nHe sells the mixture as pure Milk.\n\nFind the percentage of Water.",
+    "options": [],
+    "answer": "",
+    "explanation": "Water\n\n20\n\nTotal\n\n100\n\nPercentage\n\n20%"
+  },
+  {
+    "question": "A solution contains\n\n30%\n\nAcid.\n\nAnother solution contains\n\n70%\n\nAcid.\n\nFind the ratio in which they should be mixed to obtain\n\n50%\n\nAcid.",
+    "options": [],
+    "answer": "1:1",
+    "explanation": "70\u221250\n\n=\n\n20\n\n50\u221230\n\n=\n\n20\n\nRatio\n\n1:1"
+  },
+  {
+    "question": "A trader mixes\n\n40 kg\n\nRice costing\n\n\u20b950/kg\n\nwith\n\n60 kg\n\nRice costing\n\n\u20b970/kg.\n\nFind the average cost.",
+    "options": [],
+    "answer": "\u20b962/kg",
+    "explanation": "Total Cost\n\n=\n\n2000+4200\n\n=\n\n\u20b96200\n\nAverage\n\n=\n\n6200\u00f7100\n\n=\n\n\u20b962/kg"
+  },
+  {
+    "question": "What is a Mixture?\n\nA Mixture is formed by combining two or more substances without changing their individual properties.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is Allegation?\n\nAllegation is a shortcut technique used to determine the ratio in which two different values should be mixed to obtain a desired average.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why does the average always lie between the two values?\n\nBecause the final mixture is created only from those two values.\n\nIt cannot exceed the higher value or become lower than the smaller value.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "When should the Rule of Allegation be used?\n\nWhen\n\n- Two values are given.\n- Required average is given.\n- Mixing ratio is required.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is Weighted Average?\n\nWeighted Average considers both\n\nValue\n\nand\n\nQuantity.\n\nIt is used whenever quantities are unequal.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Water considered free in Milk and Water problems?\n\nBecause water is assumed to have no cost in standard aptitude questions.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

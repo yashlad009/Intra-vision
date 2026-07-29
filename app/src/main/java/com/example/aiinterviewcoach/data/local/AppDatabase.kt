@@ -5,11 +5,13 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.aiinterviewcoach.model.RecordingEntry
+import com.example.aiinterviewcoach.model.AptitudeProgress
 
-@Database(entities = [RecordingEntry::class], version = 3, exportSchema = false)
+@Database(entities = [RecordingEntry::class, AptitudeProgress::class], version = 4, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun recordingDao(): RecordingDao
+    abstract fun aptitudeDao(): AptitudeDao
 
     companion object {
         fun create(context: Context): AppDatabase =

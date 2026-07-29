@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:id="@+id/nav_aptitude"
+    app:startDestination="@id/aptitudeFragment">
+
+    <!-- Aptitude Landing/Dashboard -->
+    <fragment
+        android:id="@+id/aptitudeFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.AptitudeFragment"
+        android:label="Aptitude Preparation"
+        tools:layout="@layout/fragment_aptitude">
+        <action
+            android:id="@+id/action_aptitudeFragment_to_topicListFragment"
+            app:destination="@id/topicListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_aptitudeFragment_to_practiceQAFragment"
+            app:destination="@id/practiceQAFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Topic List in Category -->
+    <fragment
+        android:id="@+id/topicListFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.TopicListFragment"
+        android:label="{category} Topics"
+        tools:layout="@layout/fragment_topic_list">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_topicListFragment_to_studyNoteFragment"
+            app:destination="@id/studyNoteFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Study Note (Markdown content) -->
+    <fragment
+        android:id="@+id/studyNoteFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.StudyNoteFragment"
+        android:label="{topicName}"
+        tools:layout="@layout/fragment_study_note">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="topicId"
+            app:argType="string" />
+        <argument
+            android:name="topicName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_studyNoteFragment_to_practiceQAFragment"
+            app:destination="@id/practiceQAFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Practice Q&A (Flip/reveal cards) -->
+    <fragment
+        android:id="@+id/practiceQAFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.PracticeQAFragment"
+        android:label="Practice Q&amp;A: {topicName}"
+        tools:layout="@layout/fragment_practice_qa">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="topicId"
+            app:argType="string" />
+        <argument
+            android:name="topicName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

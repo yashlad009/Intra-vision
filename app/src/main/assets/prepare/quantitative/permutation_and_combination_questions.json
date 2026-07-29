@@ -1,0 +1,86 @@
+[
+  {
+    "question": "In how many ways can\n\n5 students\n\nstand in a line?",
+    "options": [],
+    "answer": "120",
+    "explanation": "Since the order matters,\n\nuse Permutation.\n\nNumber of Arrangements\n\n=\n\n5!\n\n=\n\n5\u00d74\u00d73\u00d72\u00d71\n\n=\n\n120"
+  },
+  {
+    "question": "From\n\n8 students,\n\na team of\n\n3 students\n\nis to be selected.\n\nFind the number of possible teams.",
+    "options": [],
+    "answer": "56",
+    "explanation": "Only selection matters.\n\nUse Combination.\n\n8C3\n\n=\n\n8!\n\n\u00f7(3!\u00d75!)\n\n=\n\n56"
+  },
+  {
+    "question": "How many\n\n4-digit numbers\n\ncan be formed from\n\n1,2,3,4,5\n\nwithout repetition?",
+    "options": [],
+    "answer": "120",
+    "explanation": "Order matters.\n\nUse Permutation.\n\n5P4\n\n=\n\n5!\n\n\u00f71!\n\n=\n\n120"
+  },
+  {
+    "question": "How many different arrangements can be made using the letters of\n\nAPPLE?",
+    "options": [],
+    "answer": "60",
+    "explanation": "Total Letters\n\n5\n\nRepeated Letter\n\nP appears\n\n2 times.\n\nFormula\n\n=\n\n5!\n\n\u00f72!\n\n=\n\n120\u00f72\n\n=\n\n60"
+  },
+  {
+    "question": "In how many ways can\n\n7 people\n\nsit around a circular table?",
+    "options": [],
+    "answer": "720",
+    "explanation": "Circular Arrangement\n\n=\n\n(7\u22121)!\n\n=\n\n6!\n\n=\n\n720"
+  },
+  {
+    "question": "A committee of\n\n4 members\n\nis to be formed from\n\n10 people.\n\nFind the number of possible committees.",
+    "options": [],
+    "answer": "210",
+    "explanation": "10C4\n\n=\n\n210"
+  },
+  {
+    "question": "How many\n\n3-letter words\n\ncan be formed from\n\nA,B,C,D,E\n\nwithout repetition?",
+    "options": [],
+    "answer": "60",
+    "explanation": "5P3\n\n=\n\n5\u00d74\u00d73\n\n=\n\n60"
+  },
+  {
+    "question": "How many\n\n5-digit numbers\n\ncan be formed using\n\n0,1,2,3,4\n\nwithout repetition?",
+    "options": [],
+    "answer": "96 48 72",
+    "explanation": "First digit cannot be zero.\n\nChoices for first digit\n\n=\n\n4\n\nRemaining digits\n\n=\n\n4!\n\n=\n\n24\n\nTotal Numbers\n\n=\n\n4\u00d724\n\n=\n\n96\n\n\nTreat\n\nA and B\n\nas one unit.\n\nUnits become\n\n(AB)\n\nC\n\nD\n\nE\n\nTotal Units\n\n4\n\nArrange them\n\n4!\n\n=\n\n24\n\nNow,\n\nA and B\n\ncan interchange.\n\n2!\n\n=\n\n2\n\nTotal Arrangements\n\n=\n\n24\u00d72\n\n=\n\n48\n\n\nTotal Arrangements\n\n=\n\n5!\n\n=\n\n120\n\nTogether\n\n=\n\n48\n\nRequired Answer\n\n=\n\n120\u221248\n\n=\n\n72\n\n\nTreat all vowels as one block.\n\nArrange the block with consonants.\n\nThen arrange vowels inside the block.\n\nThis type of question follows the same block method.\n\n\n6!\n\n=\n\n720\n\n\n(8\u22121)!\n\n=\n\n7!\n\n=\n\n5040\n\n\n8!\n\n=\n\n40320"
+  },
+  {
+    "question": "What is the difference between Permutation and Combination?\n\nPermutation deals with arrangements where order matters.\n\nCombination deals with selections where order does not matter.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is\n\n0!\n\nequal to\n\n1?\n\nIt is defined mathematically to keep factorial formulas consistent.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is circular permutation\n\n(n\u22121)!\n\ninstead of\n\nn!?\n\nBecause rotating everyone together in a circle does not create a new arrangement.\n\nOne position is fixed to eliminate duplicate rotations.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "When should\n\nnPr\n\nbe used?\n\nWhenever order matters.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "When should\n\nnCr\n\nbe used?\n\nWhenever only selection matters.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is\n\nPermutation\n\nalways greater than or equal to\n\nCombination?\n\nBecause every selection can be arranged in multiple different orders.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

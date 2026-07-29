@@ -1,0 +1,148 @@
+[
+  {
+    "question": "Choose the synonym of\n\n**Enhance**\n\nOptions",
+    "options": [
+      "A. Improve",
+      "B. Reduce",
+      "C. Destroy",
+      "D. Ignore"
+    ],
+    "answer": "\u2705 Improve",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the antonym of\n\n**Scarce**\n\nOptions",
+    "options": [
+      "A. Rare",
+      "B. Limited",
+      "C. Abundant",
+      "D. Small"
+    ],
+    "answer": "\u2705 Abundant",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct meaning of\n\n**Innovative**\n\nOptions",
+    "options": [
+      "A. Traditional",
+      "B. Creative",
+      "C. Slow",
+      "D. Weak"
+    ],
+    "answer": "\u2705 Creative",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct word.\n\nThe company plans to ______ its business globally.\n\nOptions",
+    "options": [
+      "A. Expand",
+      "B. Reduce",
+      "C. Delay",
+      "D. Stop"
+    ],
+    "answer": "\u2705 Expand",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct one-word substitution.\n\nOne who knows many languages.\n\nOptions",
+    "options": [
+      "A. Bibliophile",
+      "B. Polyglot",
+      "C. Optimist",
+      "D. Scientist"
+    ],
+    "answer": "\u2705 Polyglot",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the synonym of\n\n**Reliable**\n\nOptions",
+    "options": [
+      "A. Trustworthy",
+      "B. Weak",
+      "C. Careless",
+      "D. Lazy"
+    ],
+    "answer": "\u2705 Trustworthy",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the antonym of\n\n**Temporary**\n\nOptions",
+    "options": [
+      "A. Permanent",
+      "B. Short",
+      "C. Weak",
+      "D. Limited"
+    ],
+    "answer": "\u2705 Permanent",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct collocation.\n\nOptions",
+    "options": [
+      "A. Make Homework",
+      "B. Do Homework",
+      "C. Create Homework",
+      "D. Build Homework"
+    ],
+    "answer": "\u2705 Do Homework",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct word.\n\nThe manager appreciated his ______ attitude.\n\nOptions",
+    "options": [
+      "A. Professional",
+      "B. Profession",
+      "C. Professionally",
+      "D. Profess"
+    ],
+    "answer": "\u2705 Professional",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the synonym of\n\n**Efficient**\n\nOptions",
+    "options": [
+      "A. Productive",
+      "B. Slow",
+      "C. Careless",
+      "D. Weak"
+    ],
+    "answer": "\u2705 Productive",
+    "explanation": ""
+  },
+  {
+    "question": "What is vocabulary?",
+    "options": [],
+    "answer": "Vocabulary is the collection of words a person understands and uses while speaking, reading, listening, and writing.",
+    "explanation": ""
+  },
+  {
+    "question": "What is Active Vocabulary?",
+    "options": [],
+    "answer": "Words you confidently use in daily communication.",
+    "explanation": ""
+  },
+  {
+    "question": "What is Passive Vocabulary?",
+    "options": [],
+    "answer": "Words you understand but rarely use.",
+    "explanation": ""
+  },
+  {
+    "question": "How can vocabulary be improved?",
+    "options": [],
+    "answer": "Read daily, maintain a vocabulary notebook, revise regularly, and practice using new words in conversations and writing.",
+    "explanation": ""
+  },
+  {
+    "question": "Why are root words important?",
+    "options": [],
+    "answer": "Root words help you understand the meanings of many related words without memorizing each one individually.",
+    "explanation": ""
+  },
+  {
+    "question": "Why should words be learned in context?",
+    "options": [],
+    "answer": "Because the same word can have different meanings depending on how it is used.",
+    "explanation": ""
+  }
+]

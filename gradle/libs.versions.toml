@@ -94,8 +94,11 @@ coroutines-core           = { group = "org.jetbrains.kotlinx",   name = "kotlinx
 mlkit-face-detection      = { group = "com.google.mlkit",        name = "face-detection",          version.ref = "mlkit-face-detection" }
 mlkit-pose-detection      = { group = "com.google.mlkit",        name = "pose-detection",          version.ref = "mlkit-pose-detection" }
 
-# ── Charts ─────────────────────────────────────────────────────────────────────
+# Charts
 mpandroidchart            = { group = "com.github.PhilJay",      name = "MPAndroidChart",          version = "v3.1.0" }
+
+# Markwon Markdown renderer
+markwon-core              = { group = "io.noties.markwon",       name = "core",                    version = "4.6.2" }
 
 # ── Firebase & Authentication ──────────────────────────────────────────────────
 firebase-bom              = { group = "com.google.firebase",     name = "firebase-bom",            version.ref = "firebase-bom" }

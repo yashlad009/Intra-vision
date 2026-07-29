@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the difference between rank and position?",
+    "options": [],
+    "answer": "A rank indicates a person's place in an ordered list, while a position refers to the specific location relative to others.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is\n\n\u22121\n\nused in the total persons formula?",
+    "options": [],
+    "answer": "Because the same person is counted once from the left and once from the right.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the biggest mistake in ranking questions?",
+    "options": [],
+    "answer": "Counting the same person twice or confusing left and right positions.",
+    "explanation": ""
+  },
+  {
+    "question": "Why should diagrams be drawn?",
+    "options": [],
+    "answer": "They simplify visualization and reduce logical errors.",
+    "explanation": ""
+  },
+  {
+    "question": "How can ranking questions be solved faster?",
+    "options": [],
+    "answer": "Use formulas, identify the reference point, and draw simple diagrams.",
+    "explanation": ""
+  }
+]

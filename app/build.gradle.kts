@@ -131,4 +131,7 @@ dependencies {
 
     // Fragment scenario for isolated fragment testing
     debugImplementation(libs.fragment.testing)
+
+    // Markwon Markdown Rendering
+    implementation(libs.markwon.core)
 }

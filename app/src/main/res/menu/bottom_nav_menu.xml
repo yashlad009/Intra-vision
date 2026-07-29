@@ -7,6 +7,11 @@
         android:title="@string/tab_aptitude" />
 
     <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/tab_home" />
+
+    <item
         android:id="@+id/nav_interview"
         android:icon="@drawable/ic_interview"
         android:title="@string/tab_interview" />

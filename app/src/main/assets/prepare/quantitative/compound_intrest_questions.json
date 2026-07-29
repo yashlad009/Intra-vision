@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Find the Compound Interest on \u20b925,000 at 8% for 2 years.",
+    "options": [],
+    "answer": "",
+    "explanation": "Amount\n\n=\n\n25000\u00d71.08\u00b2\n\n=\n\n\u20b929,160\n\nCI\n\n=\n\n\u20b94,160"
+  },
+  {
+    "question": "A bank compounds interest half-yearly.\n\nPrincipal\n\n\u20b980,000\n\nRate\n\n12%\n\nTime\n\n2 years\n\nFind Amount.",
+    "options": [],
+    "answer": "",
+    "explanation": "Half-Year Rate\n\n6%\n\nPeriods\n\n4\n\nAmount\n\n=\n\n80000\u00d71.06^4\n\n=\n\n\u20b91,00,999.36\n\nCI\n\n=\n\n\u20b920,999.36"
+  },
+  {
+    "question": "Find the Amount if\n\nPrincipal\n\n\u20b915,000\n\nRate\n\n15%\n\nTime\n\n3 years\n\nCompounded annually.",
+    "options": [],
+    "answer": "",
+    "explanation": "Amount\n\n=\n\n15000\u00d71.15\u00b3\n\n=\n\n\u20b922,813.13\n\nCI\n\n=\n\n\u20b97,813.13"
+  },
+  {
+    "question": "A sum becomes \u20b948,400 in 2 years at 10% compound interest.\n\nFind the Principal.",
+    "options": [],
+    "answer": "\u20b940,000",
+    "explanation": "P\n\n=\n\n48400\n\n\u00f71.21\n\n=\n\n\u20b940,000"
+  },
+  {
+    "question": "Find the difference between SI and CI for\n\n\u20b930,000\n\n10%\n\n2 years\n\nDifference\n\n=\n\n30000\u00d7100\n\n\u00f710000\n\n=\n\n\u20b9300",
+    "options": [],
+    "answer": "\u20b9300",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Compound Interest always greater than Simple Interest?\n\nBecause every year's interest becomes part of the Principal and earns additional interest.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "When are SI and CI equal?\n\nOnly for one year.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why do banks prefer Compound Interest?\n\nBecause it reflects the true growth of money over time.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Which investment grows faster?\n\nSimple Interest\n\nor\n\nCompound Interest?\n\nCompound Interest.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the meaning of \"Compounded Half-Yearly\"?\n\nInterest is calculated twice every year.",
+    "options": [],
+    "answer": "\u20b940,000 \u20b950,000 10% 3 years",
+    "explanation": "P\n\n=\n\n48400\n\n\u00f71.21\n\n=\n\n\u20b940,000\n\n\nP\n\n=\n\n79507\n\n\u00f71.08\u2076\n\n\u2248\u20b950,000"
+  },
+  {
+    "question": "Find the Compound Interest on \u20b980,000 at 10% for 2 years.",
+    "options": [],
+    "answer": "",
+    "explanation": "Amount\n\n=\n\n80000\u00d71.10\u00b2\n\n=\n\n\u20b996,800\n\nCompound Interest\n\n=\n\n\u20b916,800"
+  },
+  {
+    "question": "A sum becomes \u20b966,550 in 3 years at 10%.\n\nFind the Principal.",
+    "options": [],
+    "answer": "",
+    "explanation": "P\n\n=\n\n66550\n\n\u00f71.331\n\n=\n\n\u20b950,000"
+  },
+  {
+    "question": "Find the Amount on \u20b925,000 at 8% compounded annually for 3 years.",
+    "options": [],
+    "answer": "",
+    "explanation": "Amount\n\n=\n\n25000\u00d71.08\u00b3\n\n=\n\n\u20b931,492.80"
+  },
+  {
+    "question": "Find the Difference between SI and CI.\n\nPrincipal\n\n\u20b940,000\n\nRate\n\n10%\n\nTime\n\n2 years\n\nDifference\n\n=\n\n40000\u00d7100\n\n\u00f710000\n\n=\n\n\u20b9400",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "A bank compounds interest quarterly.\n\nPrincipal\n\n\u20b91,00,000\n\nRate\n\n12%\n\nTime\n\n1 year\n\nQuarter Rate\n\n=\n\n3%\n\nPeriods\n\n=\n\n4\n\nAmount\n\n=\n\n100000\u00d71.03\u2074\n\n\u2248\u20b91,12,550.88\n\nCompound Interest\n\n\u2248\u20b912,550.88",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why does Compound Interest grow faster than Simple Interest?\n\nBecause interest itself earns additional interest every year.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Compound Interest called \"Interest on Interest\"?\n\nBecause previously earned interest becomes part of the Principal.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Which gives a higher return?\n\nAnnual,\n\nHalf-Yearly,\n\nor\n\nQuarterly Compounding?\n\nQuarterly Compounding gives a higher return because interest is added more frequently.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Can Compound Interest ever be equal to Simple Interest?\n\nYes.\n\nOnly for one year.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why do banks prefer Compound Interest?\n\nIt accurately reflects the time value of money and continuous growth of investments.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Why does the hour hand move continuously?",
+    "options": [],
+    "answer": "Because it moves gradually every minute instead of jumping after every hour.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is the minute hand faster?",
+    "options": [],
+    "answer": "It completes one full revolution every hour, while the hour hand completes one revolution in twelve hours.",
+    "explanation": ""
+  },
+  {
+    "question": "What is a reflex angle?",
+    "options": [],
+    "answer": "An angle greater than 180\u00b0 but less than 360\u00b0.",
+    "explanation": ""
+  },
+  {
+    "question": "How does a mirror clock work?",
+    "options": [],
+    "answer": "The reflected time is obtained by subtracting the displayed time from 11:60.",
+    "explanation": ""
+  },
+  {
+    "question": "Which formula is used most frequently?",
+    "options": [],
+    "answer": "``` Angle = |30H\u22125.5M| ```",
+    "explanation": ""
+  }
+]

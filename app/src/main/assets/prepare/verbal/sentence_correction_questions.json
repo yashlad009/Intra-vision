@@ -1,0 +1,202 @@
+[
+  {
+    "question": "\u274c He don't like coffee.\n\nCorrect\n\n\u2705 He doesn't like coffee.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c She has wrote a letter.\n\nCorrect\n\n\u2705 She has written a letter.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c If I was you, I would accept the offer.\n\nCorrect\n\n\u2705 If I were you, I would accept the offer.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c Hardly had I reached than it started raining.\n\nCorrect\n\n\u2705 Hardly had I reached when it started raining.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c No sooner did he arrive when the meeting began.\n\nCorrect\n\n\u2705 No sooner did he arrive than the meeting began.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c He is one of those students who works hard.\n\nCorrect\n\n\u2705 He is one of those students who work hard.",
+    "options": [],
+    "answer": "",
+    "explanation": "\"Who\"\n\nrefers to\n\nstudents."
+  },
+  {
+    "question": "\u274c Scarcely had she entered than everyone stood up.\n\nCorrect\n\n\u2705 Scarcely had she entered when everyone stood up.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c The news are encouraging.\n\nCorrect\n\n\u2705 The news is encouraging.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c Everybody have completed the test.\n\nCorrect\n\n\u2705 Everybody has completed the test.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "\u274c She prefers tea than coffee.\n\nCorrect\n\n\u2705 She prefers tea to coffee.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. Neither of the boys are present.",
+      "B. Neither of the boys is present.",
+      "C. Neither of the boys were present.",
+      "D. Neither boys is present."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": "\"Neither\" is singular."
+  },
+  {
+    "question": "Identify the correct sentence.",
+    "options": [
+      "A. She is senior than me.",
+      "B. She is senior to me.",
+      "C. She is more senior than me.",
+      "D. She senior than me."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. The furniture are expensive.",
+      "B. The furniture is expensive.",
+      "C. The furnitures are expensive.",
+      "D. Furniture were expensive."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": "\"Furniture\" is an uncountable noun."
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. Each employee have submitted the report.",
+      "B. Each employee has submitted the report.",
+      "C. Each employees has submitted the report.",
+      "D. Each employee had submit the report."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": ""
+  },
+  {
+    "question": "Identify the correct sentence.",
+    "options": [
+      "A. I have been living here since five years.",
+      "B. I have lived here since five years.",
+      "C. I have been living here for five years.",
+      "D. I am living here since five years."
+    ],
+    "answer": "\u2705 **C**",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. Hardly had I entered than the bell rang.",
+      "B. Hardly I had entered when the bell rang.",
+      "C. Hardly had I entered when the bell rang.",
+      "D. Hardly entered I when the bell rang."
+    ],
+    "answer": "\u2705 **C**",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. No sooner did he arrive when it started raining.",
+      "B. No sooner had he arrived than it started raining.",
+      "C. No sooner he arrived than it started raining.",
+      "D. No sooner arrived he than it started raining."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. The teacher as well as the students are happy.",
+      "B. The teacher as well as the students is happy.",
+      "C. The teacher as well as students were happy.",
+      "D. The teachers as well as students is happy."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": "The verb agrees with **teacher**."
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. Everyone have completed the assignment.",
+      "B. Everyone has completed the assignment.",
+      "C. Everyone had complete the assignment.",
+      "D. Everyone are completing the assignment."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": ""
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "A. He is good in Mathematics.",
+      "B. He is good at Mathematics.",
+      "C. He is good on Mathematics.",
+      "D. He is good for Mathematics."
+    ],
+    "answer": "\u2705 **B**",
+    "explanation": ""
+  },
+  {
+    "question": "What is Sentence Correction?",
+    "options": [],
+    "answer": "Sentence Correction is the process of identifying and correcting grammatical, structural, vocabulary, and logical errors in a sentence.",
+    "explanation": ""
+  },
+  {
+    "question": "Which topic is asked most frequently?",
+    "options": [],
+    "answer": "Subject-Verb Agreement and Tense Consistency.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is tense consistency important?",
+    "options": [],
+    "answer": "Because unnecessary tense changes make sentences confusing and grammatically incorrect.",
+    "explanation": ""
+  },
+  {
+    "question": "What is a dangling modifier?",
+    "options": [],
+    "answer": "A modifier that incorrectly describes the wrong word or has no clear word to describe.",
+    "explanation": ""
+  },
+  {
+    "question": "How can Sentence Correction be solved quickly?",
+    "options": [],
+    "answer": "Identify the subject, check the verb, verify tense, examine pronouns, and finally confirm the sentence meaning.",
+    "explanation": ""
+  }
+]

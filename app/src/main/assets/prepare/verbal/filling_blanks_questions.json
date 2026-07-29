@@ -1,0 +1,142 @@
+[
+  {
+    "question": "The students were advised to ______ silence during the examination.\n\nOptions",
+    "options": [
+      "A. maintain",
+      "B. maintaining",
+      "C. maintained",
+      "D. maintains"
+    ],
+    "answer": "\u2705 maintain",
+    "explanation": ""
+  },
+  {
+    "question": "He succeeded because of his ______ work.\n\nOptions",
+    "options": [
+      "A. hard",
+      "B. hardly",
+      "C. hardness",
+      "D. harder"
+    ],
+    "answer": "\u2705 hard",
+    "explanation": ""
+  },
+  {
+    "question": "The manager insisted ______ attending the meeting.\n\nOptions",
+    "options": [
+      "A. in",
+      "B. on",
+      "C. at",
+      "D. with"
+    ],
+    "answer": "\u2705 on",
+    "explanation": ""
+  },
+  {
+    "question": "The results were ______ than expected.\n\nOptions",
+    "options": [
+      "A. good",
+      "B. well",
+      "C. better",
+      "D. best"
+    ],
+    "answer": "\u2705 better",
+    "explanation": ""
+  },
+  {
+    "question": "The report must be submitted ______ Friday.\n\nOptions",
+    "options": [
+      "A. in",
+      "B. on",
+      "C. by",
+      "D. into"
+    ],
+    "answer": "\u2705 by",
+    "explanation": ""
+  },
+  {
+    "question": "He is one of the best engineers ______ I have worked with.\n\nOptions",
+    "options": [
+      "A. which",
+      "B. whom",
+      "C. who",
+      "D. whose"
+    ],
+    "answer": "\u2705 who",
+    "explanation": ""
+  },
+  {
+    "question": "Everyone ______ responsible for completing the project.\n\nOptions",
+    "options": [
+      "A. are",
+      "B. were",
+      "C. is",
+      "D. have"
+    ],
+    "answer": "\u2705 is",
+    "explanation": ""
+  },
+  {
+    "question": "The teacher asked the students to pay ______ attention.\n\nOptions",
+    "options": [
+      "A. careful",
+      "B. carefully",
+      "C. care",
+      "D. carefulness"
+    ],
+    "answer": "\u2705 careful (\"Pay careful attention\" is the correct expression.)",
+    "explanation": ""
+  },
+  {
+    "question": "The old bridge was ______ after the heavy rainfall.\n\nOptions",
+    "options": [
+      "A. damaged",
+      "B. damaging",
+      "C. damage",
+      "D. damages"
+    ],
+    "answer": "\u2705 damaged",
+    "explanation": ""
+  },
+  {
+    "question": "Success depends ______ consistent effort.\n\nOptions",
+    "options": [
+      "A. at",
+      "B. in",
+      "C. on",
+      "D. for"
+    ],
+    "answer": "\u2705 on",
+    "explanation": ""
+  },
+  {
+    "question": "What is Fill in the Blanks?",
+    "options": [],
+    "answer": "It is a verbal ability question where one or more words are missing, and the correct word must be chosen using grammar, vocabulary, and context.",
+    "explanation": ""
+  },
+  {
+    "question": "What should you check first?",
+    "options": [],
+    "answer": "Read the complete sentence and understand its meaning before looking at the options.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is context important?",
+    "options": [],
+    "answer": "Because many options are grammatically correct, but only one fits the intended meaning.",
+    "explanation": ""
+  },
+  {
+    "question": "How can vocabulary be improved?",
+    "options": [],
+    "answer": "By reading newspapers, books, editorials, and learning new words daily.",
+    "explanation": ""
+  },
+  {
+    "question": "How do elimination techniques help?",
+    "options": [],
+    "answer": "They remove incorrect choices and increase the probability of selecting the correct answer.",
+    "explanation": ""
+  }
+]

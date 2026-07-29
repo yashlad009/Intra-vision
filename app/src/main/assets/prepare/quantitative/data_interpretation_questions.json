@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is Data Interpretation?",
+    "options": [],
+    "answer": "The process of analyzing numerical information to make meaningful conclusions.",
+    "explanation": ""
+  },
+  {
+    "question": "Difference between\n\nData Interpretation\n\nand\n\nData Analysis?",
+    "options": [],
+    "answer": "DI focuses on understanding presented data. Data Analysis involves collecting, cleaning, processing, and interpreting data.",
+    "explanation": ""
+  },
+  {
+    "question": "Which graph is best for trends?",
+    "options": [],
+    "answer": "Line Graph.",
+    "explanation": ""
+  },
+  {
+    "question": "Which graph is best for distribution?",
+    "options": [],
+    "answer": "Pie Chart.",
+    "explanation": ""
+  },
+  {
+    "question": "Why do companies ask DI?",
+    "options": [],
+    "answer": "To test analytical thinking, numerical ability, and decision-making skills.",
+    "explanation": ""
+  }
+]

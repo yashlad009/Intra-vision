@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.aiinterviewcoach.data.auth.AuthRepository
 import com.example.aiinterviewcoach.data.auth.AuthResult
-import com.google.firebase.auth.FirebaseUser
+import com.example.aiinterviewcoach.data.auth.UserSession
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -15,7 +15,7 @@ import javax.inject.Inject
 sealed class AuthUiState {
     object Idle : AuthUiState()
     object Loading : AuthUiState()
-    data class Success(val user: FirebaseUser) : AuthUiState()
+    data class Success(val user: UserSession) : AuthUiState()
     data class Error(val message: String) : AuthUiState()
     object PasswordResetSent : AuthUiState()
 }
@@ -28,7 +28,7 @@ class AuthViewModel @Inject constructor(
     private val _uiState = MutableStateFlow<AuthUiState>(AuthUiState.Idle)
     val uiState: StateFlow<AuthUiState> = _uiState.asStateFlow()
 
-    val currentUser: FirebaseUser?
+    val currentUser: UserSession?
         get() = authRepository.currentUser
 
     val isLoggedIn: Boolean

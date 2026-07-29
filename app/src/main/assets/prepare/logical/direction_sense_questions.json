@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the difference between total distance and shortest distance?",
+    "options": [],
+    "answer": "Total distance is the complete path travelled. Shortest distance is the straight-line distance from start to finish.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is the coordinate method useful?",
+    "options": [],
+    "answer": "It simplifies long movement problems and reduces calculation errors.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the biggest mistake students make?",
+    "options": [],
+    "answer": "They forget the current facing direction before taking the next turn.",
+    "explanation": ""
+  },
+  {
+    "question": "Which theorem is commonly used in Direction Sense?",
+    "options": [],
+    "answer": "Pythagoras Theorem.",
+    "explanation": ""
+  },
+  {
+    "question": "How can Direction Sense questions be solved faster?",
+    "options": [],
+    "answer": "Draw a simple diagram, use coordinates when needed, and cancel opposite movements.",
+    "explanation": ""
+  }
+]

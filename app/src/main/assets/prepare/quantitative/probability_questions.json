@@ -1,0 +1,86 @@
+[
+  {
+    "question": "A fair coin is tossed three times.\n\nFind the probability of getting exactly two Heads.",
+    "options": [],
+    "answer": "3/8",
+    "explanation": "Sample Space\n\n=\n\n2\u00b3\n\n=\n\n8\n\nPossible Outcomes\n\nHHT\n\nHTH\n\nTHH\n\nFavourable Outcomes\n\n3\n\nProbability\n\n=\n\n3/8"
+  },
+  {
+    "question": "A fair die is rolled twice.\n\nFind the probability that the sum of the numbers obtained is 8.",
+    "options": [],
+    "answer": "5/36",
+    "explanation": "Total Outcomes\n\n6 \u00d7 6\n\n=\n\n36\n\nFavourable Outcomes\n\n(2,6)\n\n(3,5)\n\n(4,4)\n\n(5,3)\n\n(6,2)\n\nTotal\n\n5\n\nProbability\n\n=\n\n5/36"
+  },
+  {
+    "question": "A card is drawn randomly from a standard deck.\n\nFind the probability of drawing either an Ace or a King.",
+    "options": [],
+    "answer": "2/13",
+    "explanation": "Number of Aces\n\n4\n\nNumber of Kings\n\n4\n\nTotal Favourable Outcomes\n\n8\n\nProbability\n\n=\n\n8/52\n\n=\n\n2/13"
+  },
+  {
+    "question": "A bag contains\n\n6 Red Balls,\n\n5 Blue Balls\n\nand\n\n4 Green Balls.\n\nOne ball is selected randomly.\n\nFind the probability of selecting either a Blue Ball or a Green Ball.",
+    "options": [],
+    "answer": "3/5",
+    "explanation": "Total Balls\n\n15\n\nBlue + Green\n\n=\n\n5 + 4\n\n=\n\n9\n\nProbability\n\n=\n\n9/15\n\n=\n\n3/5"
+  },
+  {
+    "question": "Two dice are rolled.\n\nFind the probability that both numbers are even.",
+    "options": [],
+    "answer": "1/4",
+    "explanation": "Even Numbers\n\n2,4,6\n\nProbability of Even\n\n=\n\n3/6\n\n=\n\n1/2\n\nProbability\n\n=\n\n1/2 \u00d71/2\n\n=\n\n1/4"
+  },
+  {
+    "question": "A fair coin is tossed four times.\n\nFind the probability of getting at least one Head.",
+    "options": [],
+    "answer": "15/16",
+    "explanation": "Use Complement.\n\nProbability\n\n(All Tails)\n\n=\n\n1/16\n\nTherefore,\n\nProbability\n\n(At Least One Head)\n\n=\n\n1\u22121/16\n\n=\n\n15/16"
+  },
+  {
+    "question": "A card is drawn from a deck.\n\nFind the probability that it is\n\na Face Card or an Ace.",
+    "options": [],
+    "answer": "4/13",
+    "explanation": "Face Cards\n\n12\n\nAces\n\n4\n\nTotal\n\n16\n\nProbability\n\n=\n\n16/52\n\n=\n\n4/13"
+  },
+  {
+    "question": "A die is rolled.\n\nFind the probability of getting\n\na Prime Number greater than\n\n3.\n\nPrime Numbers\n\n2,3,5\n\nGreater than 3\n\n5\n\nProbability\n\n=\n\n1/6",
+    "options": [],
+    "answer": "1/6",
+    "explanation": ""
+  },
+  {
+    "question": "What is Probability?\n\nProbability is the numerical measure of the likelihood of an event occurring.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why does Probability always lie between\n\n0\n\nand\n\n1?\n\nBecause an event cannot be less likely than impossible (0) or more certain than certain (1).",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is Sample Space?\n\nThe complete set of all possible outcomes of an experiment.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the difference between\n\nIndependent\n\nand\n\nDependent Events?\n\nIndependent Events\n\ndo not affect each other.\n\nDependent Events\n\nchange the probability of subsequent events.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Complement Probability useful?\n\nBecause many difficult probability questions become easier by calculating\n\n1\u2212P(Event).",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is Conditional Probability?\n\nIt is the probability of an event occurring given that another event has already occurred.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

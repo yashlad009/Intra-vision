@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is an Odd Day?",
+    "options": [],
+    "answer": "The remaining day after counting complete weeks.",
+    "explanation": ""
+  },
+  {
+    "question": "Why do leap years exist?",
+    "options": [],
+    "answer": "To keep the calendar synchronized with the Earth's revolution around the Sun.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is modulo 7 used?",
+    "options": [],
+    "answer": "Because a week contains exactly seven days.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the biggest mistake in Calendar questions?",
+    "options": [],
+    "answer": "Ignoring leap years and odd days.",
+    "explanation": ""
+  },
+  {
+    "question": "How can Calendar questions be solved faster?",
+    "options": [],
+    "answer": "Use odd days, ignore complete weeks, and check leap years first.",
+    "explanation": ""
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "question": "A shopkeeper buys an article for \u20b91,200 and marks it at \u20b91,600. He allows a discount of 10%.\n\nFind:\n\n\u2022 Selling Price\n\n\u2022 Profit\n\n\u2022 Profit Percentage",
+    "options": [],
+    "answer": "Selling Price = \u20b91,440 Profit = \u20b9240 Profit Percentage = 20%",
+    "explanation": "Marked Price = \u20b91,600\n\nDiscount = 10%\n\nSelling Price\n\n=1600 \u00d790/100\n\n=\u20b91,440\n\nProfit\n\n=1440\u22121200\n\n=\u20b9240\n\nProfit%\n\n=(240\u00f71200)\u00d7100\n\n=20%"
+  },
+  {
+    "question": "An article is sold for \u20b92,400 after giving a discount of 20%.\n\nFind the Marked Price.",
+    "options": [],
+    "answer": "\u20b93,000",
+    "explanation": "Selling Price\n\n=80% of Marked Price\n\n80%=2400\n\n100%\n\n=(2400\u00d7100)/80\n\n=\u20b93,000"
+  },
+  {
+    "question": "A trader purchases a table for \u20b95,000.\n\nHe wants to earn a profit of 25%.\n\nAt what price should he sell it?",
+    "options": [],
+    "answer": "\u20b96,250",
+    "explanation": "Selling Price\n\n=5000\u00d7125/100\n\n=\u20b96,250"
+  },
+  {
+    "question": "A television is sold for \u20b936,000 at a loss of 10%.\n\nFind its Cost Price.",
+    "options": [],
+    "answer": "\u20b940,000",
+    "explanation": "Selling Price\n\n=90% of Cost Price\n\n90%=36000\n\n100%\n\n=(36000\u00d7100)/90\n\n=\u20b940,000"
+  },
+  {
+    "question": "A shopkeeper marks an article 40% above its Cost Price.\n\nHe allows a discount of 10%.\n\nFind the Profit Percentage.",
+    "options": [],
+    "answer": "26% \u20b9500 \u20b91,000",
+    "explanation": "Assume\n\nCost Price = \u20b9100\n\nMarked Price\n\n=\u20b9140\n\nDiscount\n\n10%\n\nSelling Price\n\n=140\u00d790%\n\n=\u20b9126\n\nProfit\n\n=126\u2212100\n\n=\u20b926\n\nProfit Percentage\n\n26%\n\n\nAssume\n\nCP = \u20b9100\n\nMP = \u20b9150\n\nDiscount\n\n20%\n\nSelling Price\n\n150\u00d780%\n\n=\u20b9120\n\nProfit\n\n20\n\nProfit%\n\n20%\n\nInstead of using large numbers,\n\nassuming CP = \u20b9100 makes calculations much easier.\n\n\nSelling Price\n\n=120% of Cost Price\n\n120%=600\n\n100%\n\n=(600\u00d7100)/120\n\n=\u20b9500\n\n\n85%=850\n\n100%\n\n=(850\u00d7100)/85\n\n=\u20b91,000"
+  }
+]

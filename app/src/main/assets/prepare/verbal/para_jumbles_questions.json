@@ -1,0 +1,205 @@
+[
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. The internet has transformed communication.",
+      "B. Today, people communicate instantly across continents.",
+      "C. Earlier, communication depended mainly on letters.",
+      "D. Technological advancements made this possible."
+    ],
+    "answer": "C \u2192 A \u2192 D \u2192 B",
+    "explanation": "Opening\n\nC\n\n\u2193\n\nPast Situation\n\nNext\n\nA\n\n\u2193\n\nGeneral Change\n\nNext\n\nD\n\n\u2193\n\nReason\n\nLast\n\nB\n\n\u2193\n\nPresent Result"
+  },
+  {
+    "question": "Correct Order\n\nA \u2192 C \u2192 B \u2192 D",
+    "options": [
+      "A. Water scarcity affects millions.",
+      "B. Governments are investing in conservation.",
+      "C. Climate change has worsened the situation.",
+      "D. Sustainable practices are becoming essential."
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Correct Order\n\nA \u2192 B \u2192 C \u2192 D",
+    "options": [
+      "A. Smartphones have changed daily life.",
+      "B. Mobile applications simplify many tasks.",
+      "C. Digital payments are increasing rapidly.",
+      "D. Technology continues to evolve."
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Correct Order\n\nA \u2192 B \u2192 C",
+    "options": [
+      "A. Artificial Intelligence requires quality data.",
+      "B. Poor data produces inaccurate predictions.",
+      "C. Therefore, data cleaning is essential."
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Correct Order\n\nA \u2192 B \u2192 C",
+    "options": [
+      "A. Rahul completed his engineering degree.",
+      "B. He prepared for placement interviews.",
+      "C. Finally, he secured a software engineering job."
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Correct Order\n\nA \u2192 B \u2192 C",
+    "options": [
+      "A. The teacher explained recursion.",
+      "B. Students practiced coding questions.",
+      "C. Their understanding improved significantly."
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following sentences.",
+    "options": [
+      "A. Today, online education has become common.",
+      "B. Internet technology has made remote learning possible.",
+      "C. Earlier, students depended mainly on classrooms.",
+      "D. As a result, education has become more accessible."
+    ],
+    "answer": "C \u2192 B \u2192 A \u2192 D",
+    "explanation": "Opening\n\nC\n\n\u2193\n\nPast Situation\n\nNext\n\nB\n\n\u2193\n\nReason\n\nNext\n\nA\n\n\u2193\n\nCurrent Situation\n\nLast\n\nD\n\n\u2193\n\nResult"
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Artificial Intelligence assists doctors.",
+      "B. Machine learning analyzes medical records.",
+      "C. This improves diagnostic accuracy.",
+      "D. Healthcare technology is evolving rapidly."
+    ],
+    "answer": "D \u2192 A \u2192 B \u2192 C",
+    "explanation": "Opening\n\nD\n\n\u2193\n\nGeneral Topic\n\nNext\n\nA\n\n\u2193\n\nApplication\n\nNext\n\nB\n\n\u2193\n\nSpecific Explanation\n\nLast\n\nC\n\n\u2193\n\nResult"
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Employees received regular training.",
+      "B. Productivity improved significantly.",
+      "C. The company invested in skill development.",
+      "D. As a result, customer satisfaction increased."
+    ],
+    "answer": "C \u2192 A \u2192 B \u2192 D",
+    "explanation": "Opening\n\nC\n\n\u2193\n\nInvestment\n\nNext\n\nA\n\n\u2193\n\nTraining\n\nNext\n\nB\n\n\u2193\n\nImmediate Result\n\nLast\n\nD\n\n\u2193\n\nFinal Outcome"
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Rainwater harvesting conserves water.",
+      "B. Water shortages are increasing worldwide.",
+      "C. Governments encourage conservation methods.",
+      "D. Therefore, many cities promote rainwater harvesting."
+    ],
+    "answer": "B \u2192 A \u2192 C \u2192 D",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. The software was tested thoroughly.",
+      "B. Developers fixed all major bugs.",
+      "C. The product was released successfully.",
+      "D. Initial testing revealed several issues."
+    ],
+    "answer": "D \u2192 B \u2192 A \u2192 C",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Scientists discovered a new vaccine.",
+      "B. Clinical trials confirmed its effectiveness.",
+      "C. Millions of people benefited.",
+      "D. Research continued for several years."
+    ],
+    "answer": "D \u2192 A \u2192 B \u2192 C",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Rahul practiced coding daily.",
+      "B. He solved over 300 programming problems.",
+      "C. His problem-solving ability improved.",
+      "D. He secured an internship at a software company."
+    ],
+    "answer": "A \u2192 B \u2192 C \u2192 D",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Electric vehicles reduce pollution.",
+      "B. Charging infrastructure is expanding.",
+      "C. Governments encourage electric mobility.",
+      "D. Consequently, more people are purchasing EVs."
+    ],
+    "answer": "A \u2192 C \u2192 B \u2192 D",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. Reading improves vocabulary.",
+      "B. Better vocabulary improves communication.",
+      "C. Communication is essential for placements.",
+      "D. Therefore, students should develop reading habits."
+    ],
+    "answer": "A \u2192 B \u2192 C \u2192 D",
+    "explanation": ""
+  },
+  {
+    "question": "Arrange the following.",
+    "options": [
+      "A. The research findings were published.",
+      "B. Scientists completed several experiments.",
+      "C. Data was carefully analyzed.",
+      "D. The study received international recognition."
+    ],
+    "answer": "B \u2192 C \u2192 A \u2192 D \u2705 A",
+    "explanation": ""
+  },
+  {
+    "question": "What is a Para Jumble?",
+    "options": [],
+    "answer": "A Para Jumble is a verbal ability question where sentences are arranged in a logical order to form a meaningful paragraph.",
+    "explanation": ""
+  },
+  {
+    "question": "How do you identify the opening sentence?",
+    "options": [],
+    "answer": "The opening sentence introduces the topic and usually does not contain pronouns or transition words referring to previous ideas.",
+    "explanation": ""
+  },
+  {
+    "question": "Why are transition words important?",
+    "options": [],
+    "answer": "They indicate relationships such as contrast, addition, result, or sequence, helping determine the correct order.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the biggest mistake students make?",
+    "options": [],
+    "answer": "They focus only on grammar instead of the logical flow and relationships between ideas.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the fastest strategy?",
+    "options": [],
+    "answer": "Identify the opening sentence, connect related sentence pairs, place examples after explanations, and keep conclusions at the end.",
+    "explanation": ""
+  }
+]

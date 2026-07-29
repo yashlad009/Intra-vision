@@ -5,6 +5,7 @@
 
     <!-- Bottom Navigation Tabs -->
     <string name="tab_aptitude">Aptitude</string>
+    <string name="tab_home">Home</string>
     <string name="tab_interview">Interview</string>
     <string name="tab_resume">Resume</string>
 

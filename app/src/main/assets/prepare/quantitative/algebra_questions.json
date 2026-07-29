@@ -1,0 +1,110 @@
+[
+  {
+    "question": "Why does multiplying an inequality by a negative number reverse the sign?\n\nBecause multiplying by a negative number reverses the order of numbers on the number line.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Can an absolute value ever be negative?\n\nNo.\n\nAbsolute value represents distance,\n\nand distance is always non-negative.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the difference between\n\n|x|=5\n\nand\n\nx=5?\n\n|x|=5\n\nhas two solutions.\n\nx=5\n\nhas only one.",
+    "options": [],
+    "answer": "Son's age = 20 years 14 years and 20 years 13.33 kg \u20b960,000 Cost Price = \u20b9700 \u20b91000 B alone takes 6 days. 60 km/h 37 14 Width = 7 cm Length = 11 cm",
+    "explanation": "Let son's age = x\n\nFather's age = x + 25\n\nEquation\n\nx + 25 = 45\n\nx = 20\n\n\nLet younger brother = x\n\nElder brother = x + 6\n\nEquation\n\nx + (x + 6) = 34\n\n2x + 6 = 34\n\n2x = 28\n\nx = 14\n\nElder = 20\n\n\nLet quantity of \u20b960 rice = x kg\n\nEquation\n\n40(20) + 60x\n\n=\n\n48(20 + x)\n\n800 + 60x\n\n=\n\n960 + 48x\n\n12x = 160\n\nx = 13.33 kg\n\n\nLet B's investment = x\n\nAccording to ratio\n\n40000/x = 2/3\n\n2x = 120000\n\nx = \u20b960,000\n\n\nLet Cost Price = x\n\nSelling Price = 120% of x\n\n1.2x = 840\n\nx = \u20b9700\n\n\n0.9x = 900\n\nx = \u20b91000\n\n\n1/12 + 1/x = 1/4\n\nMultiply throughout by 12x\n\nx + 12 = 3x\n\n2x = 12\n\nx = 6\n\n\n5x = 300\n\nx = 60 km/h\n\n\nLet number = x\n\nx + 15 = 52\n\nx = 37\n\n\n2x \u2212 8 = 20\n\n2x = 28\n\nx = 14\n\n\nWidth = x\n\nLength = x + 4\n\nPerimeter\n\n2(L + W)\n\n=\n\n36\n\n2(x + x + 4)\n\n=\n\n36\n\n4x + 8 = 36\n\n4x = 28\n\nx = 7\n\nLength = 11"
+  },
+  {
+    "question": "The sum of two numbers is 40.\n\nTheir difference is 8.\n\nFind the numbers.",
+    "options": [],
+    "answer": "24 and 16",
+    "explanation": ""
+  },
+  {
+    "question": "A father is three times as old as his son.\n\nAfter 12 years,\n\nhe will be twice as old.\n\nFind their present ages.",
+    "options": [],
+    "answer": "Son = 12 years Father = 36 years",
+    "explanation": ""
+  },
+  {
+    "question": "A person bought an article for \u20b9750 and sold it with a profit of 12%.\n\nFind the Selling Price.",
+    "options": [],
+    "answer": "\u20b9840",
+    "explanation": ""
+  },
+  {
+    "question": "The length of a rectangle is twice its width.\n\nPerimeter = 48 cm.\n\nFind the dimensions.",
+    "options": [],
+    "answer": "Width = 8 cm Length = 16 cm",
+    "explanation": ""
+  },
+  {
+    "question": "The sum of three consecutive integers is 72.\n\nFind the integers.",
+    "options": [],
+    "answer": "23 24 25",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Algebra called the language of Mathematics?\n\nBecause it represents unknown quantities using symbols and equations.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why are variables useful?\n\nThey help represent unknown or changing values.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why should word problems be converted into equations?\n\nBecause equations are easier to solve systematically.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Where is Algebra used in Computer Science?\n\n- Algorithms\n- Artificial Intelligence\n- Machine Learning\n- Cryptography\n- Computer Graphics",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Why is Algebra important for placements?\n\nBecause many aptitude questions require forming and solving equations quickly.",
+    "options": [],
+    "answer": "",
+    "explanation": "x = -b/a"
+  },
+  {
+    "question": "What is Algebra?\n\nAlgebra is the branch of mathematics that uses symbols and variables to represent unknown quantities and relationships.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the difference between an expression and an equation?\n\nAn expression has no equals sign, whereas an equation contains an equals sign and can be solved.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the importance of the discriminant?\n\nIt predicts the number and type of roots without solving the quadratic equation.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "What is the use of the Factor Theorem?\n\nIt helps determine whether a given linear expression is a factor of a polynomial.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Where is Algebra used in AI and Machine Learning?\n\nAlgebra is used in optimization, regression models, neural networks, feature engineering, matrix operations, and mathematical modeling.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

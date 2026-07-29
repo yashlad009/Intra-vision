@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the difference between a statement and a conclusion?",
+    "options": [],
+    "answer": "A statement provides information, while a conclusion is a logical result derived from that information.",
+    "explanation": ""
+  },
+  {
+    "question": "Why should outside knowledge be ignored?",
+    "options": [],
+    "answer": "Because the question tests logical reasoning based only on the given statement.",
+    "explanation": ""
+  },
+  {
+    "question": "What is an assumption?",
+    "options": [],
+    "answer": "An assumption is an unstated idea that is not directly supported by the statement.",
+    "explanation": ""
+  },
+  {
+    "question": "Can a conclusion be true in real life but still not follow?",
+    "options": [],
+    "answer": "Yes. If the statement does not support it, the conclusion does not follow.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the most important rule?",
+    "options": [],
+    "answer": "Accept the statement as true and avoid assumptions.",
+    "explanation": ""
+  }
+]

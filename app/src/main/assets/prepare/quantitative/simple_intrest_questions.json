@@ -1,0 +1,62 @@
+[
+  {
+    "question": "A sum of money becomes \u20b914,400 in 4 years at 10% Simple Interest.\n\nFind the Principal.",
+    "options": [],
+    "answer": "\u20b910,285.71",
+    "explanation": "Interest for 4 years\n\n= 40%\n\nAmount\n\n= 140%\n\n140%\n\n= \u20b914,400\n\n100%\n\n= \u20b914,400 \u00d7100 /140\n\n= \u20b910,285.71"
+  },
+  {
+    "question": "A loan of \u20b940,000 earns \u20b912,000 as Simple Interest.\n\nIf the rate is 10%, find the time.",
+    "options": [],
+    "answer": "3 years",
+    "explanation": "T\n\n=\n\n12000\u00d7100\n\n\u00f7(40000\u00d710)\n\n=\n\n3 years"
+  },
+  {
+    "question": "A person borrowed \u20b960,000.\n\nHe paid \u20b99,000 as Simple Interest.\n\nThe loan lasted 2 years.\n\nFind the annual Rate.",
+    "options": [],
+    "answer": "7.5%",
+    "explanation": "Rate\n\n=\n\n9000\u00d7100\n\n\u00f7120000\n\n=\n\n7.5%"
+  },
+  {
+    "question": "A principal doubles in 20 years under Simple Interest.\n\nFind the annual Rate.",
+    "options": [],
+    "answer": "5%",
+    "explanation": "Interest\n\n=\n\nPrincipal\n\n100%\n\nTime\n\n20 years\n\nRate\n\n=\n\n100\u00f720\n\n=\n\n5%"
+  },
+  {
+    "question": "In how many years will a sum become three times itself at 8% Simple Interest?",
+    "options": [],
+    "answer": "25 years",
+    "explanation": "Increase required\n\n=\n\n200%\n\nTime\n\n=\n\n200\u00f78\n\n=\n\n25 years"
+  },
+  {
+    "question": "Simple Interest is the interest calculated only on the original Principal throughout the investment or loan period.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Because interest is always calculated on the initial Principal and does not earn interest on previous interest.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "No.\n\nIf Principal, Rate and Time remain unchanged,\n\nthe interest earned every year remains the same.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "Simple Interest or Compound Interest?\n\nFor the same Principal, Rate and Time,\n\nCompound Interest is always greater than or equal to Simple Interest.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "- Personal Loans\n- Gold Loans\n- Educational Examples\n- Banking Basics\n- Government Schemes\n- Short-term Investments",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

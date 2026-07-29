@@ -34,20 +34,24 @@ class LandingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Session check: If user is not logged in, navigate to LoginFragment
+        // Session check: If user is not logged in, navigate to LoginFragment (disabled for standalone build)
+        /*
         if (!authViewModel.isLoggedIn) {
             findNavController().navigate(R.id.action_landingFragment_to_loginFragment)
             return
         }
+        */
 
         // Display current user email or display name
-        val user = authViewModel.currentUser
-        val displayName = user?.displayName ?: user?.email ?: "User"
+        val user = if (authViewModel.isLoggedIn) authViewModel.currentUser else null
+        val displayName = user?.displayName ?: user?.email ?: "Aptitude Learner"
         binding.tvUserEmail.text = "Hello, $displayName"
 
         // Logout listener
         binding.btnLogout.setOnClickListener {
-            authViewModel.signOut()
+            if (authViewModel.isLoggedIn) {
+                authViewModel.signOut()
+            }
             findNavController().navigate(R.id.action_landingFragment_to_loginFragment)
         }
 
@@ -86,6 +90,10 @@ class LandingFragment : Fragment() {
             val questionText = viewModel.getRandomQuestionText()
             val action = LandingFragmentDirections.actionLandingFragmentToRecordingFragment(questionText = questionText)
             findNavController().navigate(action)
+        }
+
+        binding.cvFacultyMockCard.setOnClickListener {
+            android.widget.Toast.makeText(requireContext(), "Faculty-Coordinator Mock is coming soon!", android.widget.Toast.LENGTH_SHORT).show()
         }
     }
 

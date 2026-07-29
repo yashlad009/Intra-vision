@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is a Number Series?",
+    "options": [],
+    "answer": "A sequence of numbers arranged according to one or more logical mathematical rules.",
+    "explanation": ""
+  },
+  {
+    "question": "What is the first thing you should check?",
+    "options": [],
+    "answer": "Difference between consecutive numbers.",
+    "explanation": ""
+  },
+  {
+    "question": "When should you use the ratio method?",
+    "options": [],
+    "answer": "When the differences are inconsistent or the numbers increase rapidly.",
+    "explanation": ""
+  },
+  {
+    "question": "Why are prime numbers important?",
+    "options": [],
+    "answer": "Many placement questions use prime-number patterns.",
+    "explanation": ""
+  },
+  {
+    "question": "How do you solve hidden pattern questions?",
+    "options": [],
+    "answer": "Check differences, ratios, squares, cubes, prime numbers, Fibonacci, alternate patterns, and combined operations systematically.",
+    "explanation": ""
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "question": "A rational number can be expressed as a fraction p/q where q is not zero, while an irrational number cannot be expressed as such a fraction and has a non-terminating, non-repeating decimal expansion.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "A prime number must have exactly two distinct factors \u2014 1 and itself. Since 1 has only one factor (itself), it does not meet this definition.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "By expressing the number as a product of its prime factors and then adding 1 to each exponent before multiplying them together.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "It allows any number to be expressed in terms of a divisor, quotient, and remainder, which is the foundation for solving divisibility and cyclicity-based problems.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "question": "HCF is used in problems involving equal distribution, such as cutting ropes into equal pieces or arranging items in equal rows and columns, where the largest common measure is needed.",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the best approach for solving Logical Puzzles?",
+    "options": [],
+    "answer": "Organize the information using a table or grid and solve systematically.",
+    "explanation": ""
+  },
+  {
+    "question": "Why should definite clues be solved first?",
+    "options": [],
+    "answer": "They reduce possibilities and make the remaining clues easier to place.",
+    "explanation": ""
+  },
+  {
+    "question": "Why is elimination useful?",
+    "options": [],
+    "answer": "It removes impossible options, reducing complexity.",
+    "explanation": ""
+  },
+  {
+    "question": "Should you guess in puzzle questions?",
+    "options": [],
+    "answer": "No. Always rely on confirmed information.",
+    "explanation": ""
+  },
+  {
+    "question": "Which method is most effective for multi-variable puzzles?",
+    "options": [],
+    "answer": "The Grid Method.",
+    "explanation": ""
+  }
+]

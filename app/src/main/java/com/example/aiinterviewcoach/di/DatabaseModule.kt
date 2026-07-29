@@ -3,6 +3,7 @@ package com.example.aiinterviewcoach.di
 import android.content.Context
 import com.example.aiinterviewcoach.data.local.AppDatabase
 import com.example.aiinterviewcoach.data.local.RecordingDao
+import com.example.aiinterviewcoach.data.local.AptitudeDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,4 +23,8 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideRecordingDao(db: AppDatabase): RecordingDao = db.recordingDao()
+
+    @Provides
+    @Singleton
+    fun provideAptitudeDao(db: AppDatabase): AptitudeDao = db.aptitudeDao()
 }
