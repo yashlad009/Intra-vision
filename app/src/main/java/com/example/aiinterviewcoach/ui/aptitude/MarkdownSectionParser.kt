@@ -14,8 +14,8 @@ object MarkdownSectionParser {
         val currentContent = StringBuilder()
 
         for (line in lines) {
-            // Match H1 or H2 headings
-            if (line.startsWith("# ") || line.startsWith("## ")) {
+            // Match H1, H2, or H3 headings
+            if (line.startsWith("# ") || line.startsWith("## ") || line.startsWith("### ")) {
                 if (currentContent.isNotEmpty()) {
                     sections.add(MarkdownSection(currentTitle, currentContent.toString().trim()))
                     currentContent.clear()
@@ -39,27 +39,40 @@ object MarkdownSectionParser {
         for (section in sections) {
             val title = section.title.lowercase()
             when {
-                // Practice Keywords
+                // Practice Keywords (MCQs, Solved examples, exercises, company patterns)
                 title.contains("solved") || 
-                title.contains("interview questions") || 
                 title.contains("practice") ||
+                title.contains("questions") ||
                 title.contains("rapid fire") ||
-                title.contains("concept check") -> {
+                title.contains("concept check") ||
+                title.contains("beginner") ||
+                title.contains("intermediate") ||
+                title.contains("advanced") ||
+                title.contains("placement") ||
+                title.contains("tcs") ||
+                title.contains("infosys") ||
+                title.contains("accenture") ||
+                title.contains("capgemini") ||
+                title.contains("cognizant") ||
+                title.contains("deloitte") ||
+                title.contains("wipro") ||
+                title.contains("exercise") -> {
                     practice.add(section)
                 }
-                // Revise Keywords
-                title.contains("pattern") || 
+                // Revise Keywords (summaries, formulas, key takeaways, common mistakes, congrats)
                 title.contains("revision") || 
-                title.contains("assessment") || 
-                title.contains("takeaways") || 
                 title.contains("summary") || 
+                title.contains("takeaways") || 
                 title.contains("congratulations") || 
-                title.contains("next") -> {
+                title.contains("mistakes") || 
+                title.contains("formula") ||
+                title.contains("cheat sheet") ||
+                title.contains("assessment") ||
+                title.contains("pattern") -> {
                     revise.add(section)
                 }
                 // Fallback / Learn
                 else -> {
-                    // Check if we are already in practice/revise phase but got a generic heading
                     if (practice.isNotEmpty() && revise.isEmpty()) {
                         practice.add(section)
                     } else if (revise.isNotEmpty()) {

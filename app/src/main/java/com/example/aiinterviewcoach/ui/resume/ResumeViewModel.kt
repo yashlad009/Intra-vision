@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.aiinterviewcoach.data.local.ResumeRepository
 import com.example.aiinterviewcoach.model.ResumeEntity
 import com.example.aiinterviewcoach.scoring.ResumeHeuristicsEngine
-import com.tom_roush.pdfbox.android.PDFBoxResourceLoader
+import android.util.Log
 import com.tom_roush.pdfbox.pdmodel.PDDocument
 import com.tom_roush.pdfbox.text.PDFTextStripper
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -47,15 +47,6 @@ class ResumeViewModel @Inject constructor(
     private val _navigateToAnalysis = MutableSharedFlow<Unit>()
     val navigateToAnalysis: SharedFlow<Unit> = _navigateToAnalysis.asSharedFlow()
 
-    init {
-        // Initialize PdfBox Android resource loader once
-        try {
-            PDFBoxResourceLoader.init(context)
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
-
     fun processPdfUri(uri: Uri, fileName: String) {
         viewModelScope.launch {
             _isExtracting.value = true
@@ -65,11 +56,16 @@ class ResumeViewModel @Inject constructor(
                 try {
                     val contentResolver = context.contentResolver
                     val extractedText = contentResolver.openInputStream(uri)?.use { inputStream ->
-                        val document = PDDocument.load(inputStream)
-                        val stripper = PDFTextStripper()
-                        val text = stripper.getText(document)
-                        document.close()
-                        text
+                        var document: PDDocument? = null
+                        try {
+                            document = PDDocument.load(inputStream)
+                            val stripper = PDFTextStripper()
+                            val text = stripper.getText(document)
+                            Log.d("ResumeRepository", "Extracted text length: ${text.length}")
+                            text
+                        } finally {
+                            document?.close()
+                        }
                     } ?: ""
 
                     if (extractedText.isBlank()) {
@@ -83,6 +79,7 @@ class ResumeViewModel @Inject constructor(
                         Result.success(Unit)
                     }
                 } catch (e: Exception) {
+                    Log.e("ResumeRepository", "PDF extraction failed", e)
                     Result.failure<Unit>(e)
                 }
             }

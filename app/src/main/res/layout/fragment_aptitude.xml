@@ -650,11 +650,12 @@
                         android:layout_marginTop="2dp" />
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="🔒"
-                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:rotation="-90"
+                    app:tint="#0F6E56" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

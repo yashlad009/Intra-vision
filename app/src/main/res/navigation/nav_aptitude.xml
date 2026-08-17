@@ -25,6 +25,13 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_aptitudeFragment_to_mockTestSetupFragment"
+            app:destination="@id/mockTestSetupFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
     <!-- Topic List in Category -->
@@ -67,6 +74,13 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_studyNoteFragment_to_studyChatFragment"
+            app:destination="@id/studyChatFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
     <!-- Practice Q&A (Flip/reveal cards) -->
@@ -75,6 +89,84 @@
         android:name="com.example.aiinterviewcoach.ui.aptitude.PracticeQAFragment"
         android:label="Practice Q&amp;A: {topicName}"
         tools:layout="@layout/fragment_practice_qa">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="topicId"
+            app:argType="string" />
+        <argument
+            android:name="topicName"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Mock Test Setup -->
+    <fragment
+        android:id="@+id/mockTestSetupFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.MockTestSetupFragment"
+        android:label="Mock Test Setup"
+        tools:layout="@layout/fragment_mock_test_setup">
+        <action
+            android:id="@+id/action_mockTestSetupFragment_to_mockTestFragment"
+            app:destination="@id/mockTestFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Mock Test MCQ Screen -->
+    <fragment
+        android:id="@+id/mockTestFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.MockTestFragment"
+        android:label="Mock Test"
+        tools:layout="@layout/fragment_mock_test">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="questionCount"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_mockTestFragment_to_mockTestResultFragment"
+            app:destination="@id/mockTestResultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/aptitudeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <!-- Mock Test Result Screen -->
+    <fragment
+        android:id="@+id/mockTestResultFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.MockTestResultFragment"
+        android:label="Test Result"
+        tools:layout="@layout/fragment_mock_test_result">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="totalQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="correctAnswers"
+            app:argType="integer" />
+        <argument
+            android:name="timeTakenSeconds"
+            app:argType="integer" />
+        <argument
+            android:name="questionsJsonString"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Study Chat Screen -->
+    <fragment
+        android:id="@+id/studyChatFragment"
+        android:name="com.example.aiinterviewcoach.ui.aptitude.StudyChatFragment"
+        android:label="Ask AI"
+        tools:layout="@layout/fragment_study_chat">
         <argument
             android:name="category"
             app:argType="string" />

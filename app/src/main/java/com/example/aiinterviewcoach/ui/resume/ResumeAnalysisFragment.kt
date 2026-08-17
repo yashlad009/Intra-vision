@@ -37,6 +37,12 @@ class ResumeAnalysisFragment : Fragment() {
         ActivityResultContracts.OpenDocument()
     ) { uri: Uri? ->
         uri?.let { selectedUri ->
+            try {
+                val takeFlags = android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
+                requireContext().contentResolver.takePersistableUriPermission(selectedUri, takeFlags)
+            } catch (e: Exception) {
+                android.util.Log.e("ResumeAnalysisFragment", "Failed to take persistable URI permission", e)
+            }
             val fileName = getFileNameFromUri(selectedUri)
             viewModel.processPdfUri(selectedUri, fileName)
         }

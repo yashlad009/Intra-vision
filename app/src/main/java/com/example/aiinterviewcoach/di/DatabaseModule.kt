@@ -5,6 +5,7 @@ import com.example.aiinterviewcoach.data.local.AppDatabase
 import com.example.aiinterviewcoach.data.local.RecordingDao
 import com.example.aiinterviewcoach.data.local.AptitudeDao
 import com.example.aiinterviewcoach.data.local.ResumeDao
+import com.example.aiinterviewcoach.data.local.MockTestDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -32,5 +33,9 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideResumeDao(db: AppDatabase): ResumeDao = db.resumeDao()
+
+    @Provides
+    @Singleton
+    fun provideMockTestDao(db: AppDatabase): MockTestDao = db.mockTestDao()
 }
 

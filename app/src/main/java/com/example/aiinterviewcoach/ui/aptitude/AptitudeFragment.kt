@@ -68,7 +68,9 @@ class AptitudeFragment : Fragment() {
         }
 
         binding.cvConquerCard.setOnClickListener {
-            android.widget.Toast.makeText(requireContext(), "Conquer mode (Timed Mock Test) is coming soon!", android.widget.Toast.LENGTH_SHORT).show()
+            // TODO: gate Conquer behind Prepare/Practice completion
+            val action = AptitudeFragmentDirections.actionAptitudeFragmentToMockTestSetupFragment()
+            findNavController().navigate(action)
         }
 
         binding.cvQuantitative.setOnClickListener {

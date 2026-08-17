@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.aiinterviewcoach.R
@@ -56,70 +57,122 @@ class PracticeQAFragment : Fragment() {
             viewModel.nextQuestion()
         }
 
+        binding.btnPreviousQuestion.setOnClickListener {
+            viewModel.previousQuestion()
+        }
+
         viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.state.collect { state ->
-                if (state.showFinishedScreen) {
-                    Toast.makeText(requireContext(), "Practice Completed! +10 XP Awarded", Toast.LENGTH_LONG).show()
-                    findNavController().popBackStack()
-                    return@collect
-                }
+            viewLifecycleOwner.repeatOnLifecycle(androidx.lifecycle.Lifecycle.State.STARTED) {
+                viewModel.state.collect { state ->
+                    if (state.showFinishedScreen) {
+                        Toast.makeText(requireContext(), "Practice Completed! +10 XP Awarded", Toast.LENGTH_LONG).show()
+                        findNavController().popBackStack()
+                        return@collect
+                    }
 
-                if (state.questions.isEmpty()) {
-                    binding.tvQuestionText.text = "No questions found for this topic."
-                    binding.btnNextQuestion.isEnabled = false
-                    return@collect
-                }
+                    if (state.questions.isEmpty()) {
+                        binding.tvQuestionText.text = "No questions found for this topic."
+                        binding.btnNextQuestion.isEnabled = false
+                        binding.btnPreviousQuestion.isEnabled = false
+                        binding.btnPreviousQuestion.visibility = View.GONE
+                        return@collect
+                    }
 
-                val currentQuestion = state.questions[state.currentIndex]
-                val total = state.questions.size
-                val currentNum = state.currentIndex + 1
+                    binding.btnPreviousQuestion.isEnabled = (state.currentIndex > 0)
+                    binding.btnPreviousQuestion.visibility = View.VISIBLE
+                    binding.btnNextQuestion.isEnabled = true
 
-                // Update counter and progress bar
-                binding.tvCounter.text = "Question $currentNum of $total"
-                binding.pbPractice.progress = (currentNum * 100) / total
+                    val currentQuestion = state.questions[state.currentIndex]
+                    val total = state.questions.size
+                    val currentNum = state.currentIndex + 1
 
-                // Update button text on last question
-                if (currentNum == total) {
-                    binding.btnNextQuestion.text = "Finish Practice"
-                } else {
-                    binding.btnNextQuestion.text = "Next Question"
-                }
+                    // Update counter and progress bar
+                    binding.tvCounter.text = "Question $currentNum of $total"
+                    binding.pbPractice.progress = (currentNum * 100) / total
 
-                // Render Front and Back contents
-                binding.tvQuestionText.text = currentQuestion.question
-                binding.tvAnswerText.text = currentQuestion.answer
-                binding.tvExplanationText.text = currentQuestion.explanation
+                    // Update button text on last question
+                    if (currentNum == total) {
+                        binding.btnNextQuestion.text = "Finish Practice"
+                    } else {
+                        binding.btnNextQuestion.text = "Next Question"
+                    }
 
-                // Toggle visibility based on flip state
-                if (state.isFlipped) {
-                    binding.llCardFront.visibility = View.GONE
-                    binding.llCardBack.visibility = View.VISIBLE
-                } else {
-                    binding.llCardFront.visibility = View.VISIBLE
-                    binding.llCardBack.visibility = View.GONE
-                }
+                    // Render Front and Back contents
+                    binding.tvQuestionText.text = currentQuestion.question
+                    binding.tvAnswerText.text = currentQuestion.answer
+                    binding.tvExplanationText.text = currentQuestion.explanation
 
-                // Render options
-                binding.llOptionsContainer.removeAllViews()
-                if (currentQuestion.options.isNotEmpty()) {
-                    for (opt in currentQuestion.options) {
-                        val textView = TextView(requireContext()).apply {
-                            text = opt
-                            textSize = 15f
-                            setTextColor(Color.parseColor("#475569")) // Slate-600
-                            setPadding(dpToPx(16), dpToPx(12), dpToPx(16), dpToPx(12))
-                            val params = LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT
-                            ).apply {
-                                setMargins(0, dpToPx(8), 0, dpToPx(8))
+                    // Toggle visibility based on flip state
+                    if (state.isFlipped) {
+                        binding.llCardFront.visibility = View.GONE
+                        binding.llCardBack.visibility = View.VISIBLE
+                    } else {
+                        binding.llCardFront.visibility = View.VISIBLE
+                        binding.llCardBack.visibility = View.GONE
+                    }
+
+                    // Render options
+                    binding.llOptionsContainer.removeAllViews()
+                    if (currentQuestion.options.isNotEmpty()) {
+                        val userSelected = state.selectedAnswers[state.currentIndex]
+                        for (opt in currentQuestion.options) {
+                            val textView = TextView(requireContext()).apply {
+                                text = opt
+                                textSize = 15f
+                                setTextColor(Color.parseColor("#0F172A")) // Darker primary text color for readability
+                                setPadding(dpToPx(16), dpToPx(12), dpToPx(16), dpToPx(12))
+                                val params = LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT
+                                ).apply {
+                                    setMargins(0, dpToPx(8), 0, dpToPx(8))
+                                }
+                                layoutParams = params
+                                gravity = Gravity.CENTER_VERTICAL
+
+                                // Build dynamic backgrounds to prevent missing file errors
+                                val bgDrawable = android.graphics.drawable.GradientDrawable()
+                                bgDrawable.cornerRadius = dpToPx(12).toFloat()
+
+                                if (state.isFlipped) {
+                                    val isCorrect = opt.trim().lowercase() == currentQuestion.answer.trim().lowercase()
+                                    val isSelected = opt == userSelected
+                                    if (isCorrect) {
+                                        bgDrawable.setColor(Color.parseColor("#ECFDF5")) // Soft green
+                                        bgDrawable.setStroke(dpToPx(2), Color.parseColor("#10B981")) // Emerald border
+                                        setTextColor(Color.parseColor("#065F46"))
+                                    } else if (isSelected) {
+                                        bgDrawable.setColor(Color.parseColor("#FEF2F2")) // Soft red
+                                        bgDrawable.setStroke(dpToPx(2), Color.parseColor("#EF4444")) // Red border
+                                        setTextColor(Color.parseColor("#991B1B"))
+                                    } else {
+                                        bgDrawable.setColor(Color.parseColor("#FFFFFF"))
+                                        bgDrawable.setStroke(dpToPx(1), Color.parseColor("#E2E8F0"))
+                                        setTextColor(Color.parseColor("#475569"))
+                                    }
+                                } else {
+                                    val isSelected = opt == userSelected
+                                    if (isSelected) {
+                                        bgDrawable.setColor(Color.parseColor("#F0FDF4")) // Soft teal/mint background
+                                        bgDrawable.setStroke(dpToPx(2), Color.parseColor("#0D9488")) // Teal accent border
+                                        setTextColor(Color.parseColor("#0F766E"))
+                                    } else {
+                                        bgDrawable.setColor(Color.parseColor("#FFFFFF"))
+                                        bgDrawable.setStroke(dpToPx(1), Color.parseColor("#E2E8F0"))
+                                        setTextColor(Color.parseColor("#475569"))
+                                    }
+                                }
+                                background = bgDrawable
+
+                                setOnClickListener {
+                                    // Only allow selection changes before card is flipped/revealed
+                                    if (!state.isFlipped) {
+                                        viewModel.selectAnswer(opt)
+                                    }
+                                }
                             }
-                            layoutParams = params
-                            gravity = Gravity.CENTER_VERTICAL
-                            // Border & rounded background
-                            setBackgroundResource(R.drawable.bg_option_outline)
+                            binding.llOptionsContainer.addView(textView)
                         }
-                        binding.llOptionsContainer.addView(textView)
                     }
                 }
             }

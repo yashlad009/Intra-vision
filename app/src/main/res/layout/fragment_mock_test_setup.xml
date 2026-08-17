@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="24dp">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timed Mock Test"
+        android:textColor="@color/text_primary"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test your knowledge under real-time exam conditions"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!-- Category Section -->
+    <TextView
+        android:id="@+id/tvCategoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cgCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:layout_constraintTop_toBottomOf="@id/tvCategoryHeader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipQuant"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantitative"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp"
+            android:checked="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLogical"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logical"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipVerbal"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verbal"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMixed"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mixed (All)"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Question Count Section -->
+    <TextView
+        android:id="@+id/tvCountHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of Questions"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/cgCategory" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cgQuestionCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:layout_constraintTop_toBottomOf="@id/tvCountHeader">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCount15"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 Questions"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp"
+            android:checked="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCount25"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 Questions"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCount40"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 Questions"
+            app:chipBackgroundColor="@color/surface"
+            android:textColor="@color/text_primary"
+            app:chipStrokeColor="#0F6E56"
+            app:chipStrokeWidth="1dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Info Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/border"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="@color/surface"
+        app:layout_constraintTop_toBottomOf="@id/cgQuestionCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules &amp; Scoring"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• 45 seconds timer per question."
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• No option feedback is shown during the test."
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Timeout auto-submits. Finishing awards +20 XP."
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Start Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartTest"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Start Mock Test"
+        android:textColor="@color/surface"
+        android:backgroundTint="#0F6E56"
+        app:cornerRadius="12dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
