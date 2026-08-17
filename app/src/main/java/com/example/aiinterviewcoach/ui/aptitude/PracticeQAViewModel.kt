@@ -18,7 +18,8 @@ data class PracticeState(
     val questions: List<QuestionData> = emptyList(),
     val currentIndex: Int = 0,
     val isFlipped: Boolean = false,
-    val showFinishedScreen: Boolean = false
+    val showFinishedScreen: Boolean = false,
+    val selectedAnswers: Map<Int, String> = emptyMap()
 )
 
 @HiltViewModel
@@ -31,12 +32,20 @@ class PracticeQAViewModel @Inject constructor(
     val state: StateFlow<PracticeState> = _state
 
     fun loadQuestions(category: String, topicId: String) {
+        if (_state.value.questions.isNotEmpty()) return
         viewModelScope.launch {
             val questionsList = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
                 repository.loadQuestions(category, topicId)
             }
             _state.value = PracticeState(questions = questionsList)
         }
+    }
+
+    fun selectAnswer(optionText: String) {
+        val curr = _state.value
+        val updated = curr.selectedAnswers.toMutableMap()
+        updated[curr.currentIndex] = optionText
+        _state.value = curr.copy(selectedAnswers = updated)
     }
 
     fun flipCard() {

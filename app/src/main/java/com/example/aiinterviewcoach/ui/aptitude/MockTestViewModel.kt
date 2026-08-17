@@ -40,6 +40,7 @@ class MockTestViewModel @Inject constructor(
     private var totalDurationSeconds = 0
 
     fun startTest(category: String, questionCount: Int) {
+        if (_state.value.questions.isNotEmpty()) return
         viewModelScope.launch {
             val allQuestions = withContext(Dispatchers.IO) {
                 aptitudeRepository.loadQuestions(category, "all")

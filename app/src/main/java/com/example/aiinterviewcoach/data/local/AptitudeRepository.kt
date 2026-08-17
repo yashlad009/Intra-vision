@@ -186,7 +186,7 @@ class AptitudeRepository @Inject constructor(
                 val answer = obj.optString("answer", "")
                 val explanation = obj.optString("explanation", "")
                 
-                if (answer.trim().isEmpty()) {
+                if (question.trim().isEmpty() || answer.trim().isEmpty()) {
                     continue
                 }
                 
@@ -194,11 +194,17 @@ class AptitudeRepository @Inject constructor(
                 val options = mutableListOf<String>()
                 if (optionsArray != null) {
                     for (j in 0 until optionsArray.length()) {
-                        options.add(optionsArray.getString(j))
+                        val opt = optionsArray.optString(j, "")
+                        if (opt.trim().isNotEmpty()) {
+                            options.add(opt)
+                        }
                     }
                 }
                 if (options.isEmpty()) {
                     options.addAll(generateOptionsForQuestion(answer))
+                }
+                if (options.size < 2) {
+                    continue
                 }
                 list.add(QuestionData(question, options, answer, explanation))
             }

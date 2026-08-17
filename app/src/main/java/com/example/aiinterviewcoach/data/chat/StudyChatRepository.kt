@@ -23,7 +23,7 @@ class StudyChatRepository @Inject constructor() {
     ): Result<String> = withContext(Dispatchers.IO) {
         try {
             val apiKey = BuildConfig.GEMINI_API_KEY
-            if (apiKey.isEmpty() || apiKey.startsWith("AIzaSyDummy")) {
+            if (apiKey.isBlank() || apiKey == "AIzaSyDummyPlaceholderKey" || apiKey == "YOUR_API_KEY_HERE" || apiKey.startsWith("AIzaSyDummy")) {
                 return@withContext Result.failure(Exception("Gemini API key is not configured or is placeholder."))
             }
 

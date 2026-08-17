@@ -212,7 +212,15 @@ class AptitudeStudyPagerAdapter(
                     setOnClickListener {
                         viewMap[section.title]?.let { targetView ->
                             scrollView.post {
-                                scrollView.smoothScrollTo(0, targetView.top)
+                                val rect = android.graphics.Rect()
+                                targetView.getDrawingRect(rect)
+                                try {
+                                    scrollView.offsetDescendantRectToMyCoords(targetView, rect)
+                                    scrollView.smoothScrollTo(0, rect.top)
+                                } catch (e: IllegalArgumentException) {
+                                    // Fallback if not a direct descendant layout wise
+                                    scrollView.smoothScrollTo(0, targetView.top)
+                                }
                             }
                         }
                     }
