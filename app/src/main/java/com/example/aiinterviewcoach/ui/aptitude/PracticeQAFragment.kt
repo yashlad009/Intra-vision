@@ -80,6 +80,7 @@ class PracticeQAFragment : Fragment() {
 
                     binding.btnPreviousQuestion.isEnabled = (state.currentIndex > 0)
                     binding.btnPreviousQuestion.visibility = View.VISIBLE
+                    binding.btnNextQuestion.isEnabled = true
 
                     val currentQuestion = state.questions[state.currentIndex]
                     val total = state.questions.size

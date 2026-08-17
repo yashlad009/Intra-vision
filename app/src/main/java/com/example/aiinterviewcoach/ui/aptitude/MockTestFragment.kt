@@ -28,6 +28,7 @@ class MockTestFragment : Fragment() {
     private val args: MockTestFragmentArgs by navArgs()
     private var _binding: FragmentMockTestBinding? = null
     private val binding get() = _binding!!
+    private var lastRenderedIndex = -1
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -104,7 +105,34 @@ class MockTestFragment : Fragment() {
                     // Update text displays
                     binding.tvProgressCounter.text = "Question $currentNum of $total"
                     binding.pbTestProgress.progress = (currentNum * 100) / total
-                    binding.tvTestQuestionText.text = currentQuestion.question
+
+                    // Only update question text and options views if the active question has changed or options are empty
+                    if (state.currentIndex != lastRenderedIndex || binding.rgOptions.childCount == 0) {
+                        lastRenderedIndex = state.currentIndex
+                        binding.tvTestQuestionText.text = currentQuestion.question
+
+                        binding.rgOptions.setOnCheckedChangeListener(null)
+                        binding.rgOptions.removeAllViews()
+
+                        currentQuestion.options.forEachIndexed { optIndex, opt ->
+                            val radioButton = RadioButton(requireContext()).apply {
+                                id = optIndex + 1 // Use positive 1-based index to avoid 0/NO_ID bugs
+                                text = opt
+                                textSize = 15f
+                                setTextColor(Color.parseColor("#475569")) // Slate-600
+                                buttonTintList = ColorStateList.valueOf(Color.parseColor("#0F6E56"))
+                                setPadding(12, 16, 12, 16)
+                                layoutParams = RadioGroup.LayoutParams(
+                                    RadioGroup.LayoutParams.MATCH_PARENT,
+                                    RadioGroup.LayoutParams.WRAP_CONTENT
+                                ).apply {
+                                    setMargins(0, 8, 0, 8)
+                                }
+                                setBackgroundResource(R.drawable.bg_option_outline)
+                            }
+                            binding.rgOptions.addView(radioButton)
+                        }
+                    }
 
                     // Format timer display
                     val minutes = state.timeRemainingSeconds / 60
@@ -122,36 +150,16 @@ class MockTestFragment : Fragment() {
                         binding.btnTestNext.text = "Next"
                     }
 
-                    // Render options
+                    // Apply the checked state after checking/unchecking safely (pausing listeners)
                     binding.rgOptions.setOnCheckedChangeListener(null)
-                    binding.rgOptions.removeAllViews()
-
                     val userSelection = state.selectedAnswers[state.currentIndex]
-
-                    currentQuestion.options.forEachIndexed { optIndex, opt ->
-                        val radioButton = RadioButton(requireContext()).apply {
-                            id = optIndex + 1 // Use positive 1-based index to avoid 0/NO_ID bugs
-                            text = opt
-                            textSize = 15f
-                            setTextColor(Color.parseColor("#475569")) // Slate-600
-                            buttonTintList = ColorStateList.valueOf(Color.parseColor("#0F6E56"))
-                            setPadding(12, 16, 12, 16)
-                            layoutParams = RadioGroup.LayoutParams(
-                                RadioGroup.LayoutParams.MATCH_PARENT,
-                                RadioGroup.LayoutParams.WRAP_CONTENT
-                            ).apply {
-                                setMargins(0, 8, 0, 8)
-                            }
-                            setBackgroundResource(R.drawable.bg_option_outline)
-                        }
-                        binding.rgOptions.addView(radioButton)
-                    }
-
-                    // Apply the checked state after adding all views to the RadioGroup
                     if (userSelection != null) {
                         val selectedIndex = currentQuestion.options.indexOf(userSelection)
                         if (selectedIndex != -1) {
-                            binding.rgOptions.check(selectedIndex + 1)
+                            val targetId = selectedIndex + 1
+                            if (binding.rgOptions.checkedRadioButtonId != targetId) {
+                                binding.rgOptions.check(targetId)
+                            }
                         } else {
                             binding.rgOptions.clearCheck()
                         }

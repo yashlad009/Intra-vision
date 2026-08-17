@@ -153,3 +153,10 @@ dependencies {
     // PdfBox Android for PDF text extraction
     implementation(libs.pdfbox.android)
 }
+
+// Force Gradle to regenerate BuildConfig whenever local.properties changes
+tasks.configureEach {
+    if (name.contains("generate", ignoreCase = true) && name.contains("BuildConfig", ignoreCase = true)) {
+        inputs.file(rootProject.file("local.properties"))
+    }
+}
