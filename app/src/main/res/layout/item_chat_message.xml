@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="4dp">
+
+    <!-- User Message Bubble (Right aligned) -->
+    <LinearLayout
+        android:id="@+id/llUserBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_option_outline"
+        android:backgroundTint="#0F6E56"
+        android:padding="12dp"
+        android:layout_marginStart="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User message"
+            android:textColor="@color/surface"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- AI Message Bubble (Left aligned) -->
+    <LinearLayout
+        android:id="@+id/llAiBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_option_outline"
+        android:backgroundTint="#F1F5F9"
+        android:padding="12dp"
+        android:layout_marginEnd="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAiMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Response text..."
+            android:textColor="#0F172A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

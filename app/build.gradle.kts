@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -20,6 +22,14 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "com.example.aiinterviewcoach.HiltTestRunner"
+
+        val properties = Properties()
+        val localPropertiesFile = project.rootProject.file("local.properties")
+        if (localPropertiesFile.exists()) {
+            localPropertiesFile.inputStream().use { properties.load(it) }
+        }
+        val geminiApiKey = properties.getProperty("GEMINI_API_KEY") ?: ""
+        buildConfigField("String", "GEMINI_API_KEY", "\"$geminiApiKey\"")
     }
 
     // Required for Kotest JUnit 5 runner in unit tests
@@ -50,6 +60,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -111,6 +122,9 @@ dependencies {
 
     // MockK — mocking for Kotlin
     testImplementation(libs.mockk)
+
+    // Real org.json implementation for JVM tests
+    testImplementation("org.json:json:20231013")
 
     // Coroutines test utilities
     testImplementation(libs.coroutines.test)

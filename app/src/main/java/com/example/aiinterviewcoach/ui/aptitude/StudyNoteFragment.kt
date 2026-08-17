@@ -50,7 +50,15 @@ class StudyNoteFragment : Fragment() {
         }
 
         // Render Markdown using Markwon
-        val markwon = Markwon.create(requireContext())
+        val markwon = Markwon.builder(requireContext())
+            .usePlugin(object : io.noties.markwon.AbstractMarkwonPlugin() {
+                override fun configureVisitor(builder: io.noties.markwon.MarkwonVisitor.Builder) {
+                    builder.on(org.commonmark.node.SoftLineBreak::class.java) { visitor, _ ->
+                        visitor.builder().append(' ')
+                    }
+                }
+            })
+            .build()
         val mdFileName = "prepare/$category/$topicId.md"
         
         try {
@@ -91,6 +99,16 @@ class StudyNoteFragment : Fragment() {
         // Practice button listener
         binding.btnPractice.setOnClickListener {
             val action = StudyNoteFragmentDirections.actionStudyNoteFragmentToPracticeQAFragment(
+                category = category,
+                topicId = topicId,
+                topicName = topicName
+            )
+            findNavController().navigate(action)
+        }
+
+        // Ask AI FAB listener
+        binding.fabAskAi.setOnClickListener {
+            val action = StudyNoteFragmentDirections.actionStudyNoteFragmentToStudyChatFragment(
                 category = category,
                 topicId = topicId,
                 topicName = topicName

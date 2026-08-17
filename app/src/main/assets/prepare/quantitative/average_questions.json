@@ -1,32 +1,32 @@
 [
   {
-    "question": "A simple average treats all values equally, while a weighted average accounts for the relative size or importance (weight) of each group before combining them.",
+    "question": "Find the average of 15, 22, 28, 34, and 41.",
     "options": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "28",
+    "explanation": "Sum of numbers = 15 + 22 + 28 + 34 + 41 = 140. Average = 140 / 5 = 28."
   },
   {
-    "question": "Because speed is a rate (distance/time), and averaging rates directly is only valid when time is constant, not distance. For equal distances, the harmonic mean must be used instead.",
+    "question": "The average age of 25 students is 15 years. If the teacher's age is included, the average increases by 1 year. Find the teacher's age.",
     "options": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "41 years",
+    "explanation": "Total age of 25 students = 25 * 15 = 375. Total age with teacher = 26 * 16 = 416. Teacher's age = 416 - 375 = 41 years."
   },
   {
-    "question": "The average remains unchanged, since the added value does not shift the balance of the group.",
+    "question": "The average weight of 8 people increases by 1.5 kg when a new person replaces one weighing 65 kg. Find the new person's weight.",
     "options": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "77 kg",
+    "explanation": "Total weight increase = 8 * 1.5 = 12 kg. New weight = 65 + 12 = 77 kg."
   },
   {
-    "question": "No, the average of a data set always lies between its minimum and maximum values.",
+    "question": "A train covers a distance at 50 km/h going and returns over the same distance at 30 km/h. Find the average speed for the round trip.",
     "options": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "37.5 km/h",
+    "explanation": "Average Speed = 2 * S1 * S2 / (S1 + S2) = 2 * 50 * 30 / (50 + 30) = 3000 / 80 = 37.5 km/h."
   },
   {
-    "question": "Average is the arithmetic mean, one of the central measures of tendency in statistics, alongside median and mode.",
+    "question": "The average of 20 numbers is 45. If one number, 65, was misread as 25, find the correct average.",
     "options": [],
-    "answer": "",
-    "explanation": ""
+    "answer": "47",
+    "explanation": "Difference = 65 - 25 = 30. Increase in average = 30 / 20 = 1.5. Correct average = 45 + 1.5 = 46.5 (or rounded to 47 if integer)."
   }
 ]

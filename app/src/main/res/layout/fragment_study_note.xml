@@ -70,4 +70,18 @@
 
     </LinearLayout>
 
+    <!-- Ask AI FAB -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAskAi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Ask AI"
+        android:textColor="@color/surface"
+        app:backgroundTint="#0F6E56"
+        app:icon="@android:drawable/ic_menu_help"
+        app:iconTint="@color/surface"
+        app:layout_constraintBottom_toTopOf="@id/llBottomActions"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,6 +56,10 @@ class PracticeQAFragment : Fragment() {
             viewModel.nextQuestion()
         }
 
+        binding.btnPreviousQuestion.setOnClickListener {
+            viewModel.previousQuestion()
+        }
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.state.collect { state ->
                 if (state.showFinishedScreen) {
@@ -67,8 +71,13 @@ class PracticeQAFragment : Fragment() {
                 if (state.questions.isEmpty()) {
                     binding.tvQuestionText.text = "No questions found for this topic."
                     binding.btnNextQuestion.isEnabled = false
+                    binding.btnPreviousQuestion.isEnabled = false
+                    binding.btnPreviousQuestion.visibility = View.GONE
                     return@collect
                 }
+
+                binding.btnPreviousQuestion.isEnabled = (state.currentIndex > 0)
+                binding.btnPreviousQuestion.visibility = View.VISIBLE
 
                 val currentQuestion = state.questions[state.currentIndex]
                 val total = state.questions.size
